@@ -25,31 +25,19 @@ export function DotBackground() {
         </div>
       </div>
 
-      <div className="absolute left-28 top-52 backdrop-blur p-4 rounded-xl border border-blue-200 bg-blue-600/5">
-        <span className="text-gray-600 font-semibold text-sm">4.5/5</span>
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-1">
-            <Star className="text-yellow-400" />
-            <Star className="text-yellow-400" />
-            <Star className="text-yellow-400" />
-            <Star className="text-yellow-400" />
-            <Star className="text-yellow-400" />
-          </div>
-          <span className="text-sm font-normal text-gray-600">Ratings</span>
-        </div>
+      <div className="absolute left-1 top-52 backdrop-blur p-4 rounded-xl border border-blue-200 bg-blue-600/5 flex flex-col">
+        <span className="text-blue-600 font-bold text-4xl">7x <span className="text-2xl text-blue-950">MDRT Award</span></span>
+        <span className="text-sm font-normal text-gray-600">Bukti Keahlian Kelas Dunia</span>
       </div>
 
-      <div className="absolute left-24 bottom-60 backdrop-blur p-4 z-50 flex flex-col rounded-xl border border-blue-200 bg-blue-600/5">
-        <span className="text-blue-600 font-semibold text-4xl">10.310</span>
-        <span className="text-xs font-normal text-gray-600">Happy Nasabah</span>
+      <div className="absolute left-6 bottom-80 backdrop-blur p-4 z-50 flex flex-col rounded-xl border border-blue-200 bg-blue-600/5">
+        <span className="text-blue-600 font-bold text-4xl">1x <span className="text-2xl text-blue-950">COT</span></span>
+        <span className="text-xs font-normal text-gray-600">Prestasi Tier Tertinggi</span>
       </div>
 
-      <div className="absolute right-20 bottom-80 backdrop-blur p-4 z-50 flex flex-col rounded-xl border border-blue-200 bg-blue-600/5">
-        <span className="text-xs font-normal text-gray-600">Customer Satisfaction</span>
-        <div className="flex items-center gap-10">
-          <span className="text-blue-600 font-semibold text-4xl">90%</span>
-          <Image src={Line} alt="line" className="w-14" />
-        </div>
+      <div className="absolute right-10 bottom-80 backdrop-blur p-4 z-50 flex flex-col rounded-xl border border-blue-200 bg-blue-600/5">
+        <span className="text-blue-600 font-bold text-4xl">100%</span>
+        <span className="text-xs font-normal text-gray-600">Nasihat Independen</span>
       </div>
     </div>
   );

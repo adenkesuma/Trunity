@@ -10,7 +10,6 @@ export const HoverEffect = ({
   className,
 }: {
   items: {
-    title: string;
     description: string;
     icon: React.ReactNode;
   }[];
@@ -21,13 +20,13 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-4",
         className
       )}
     >
       {items.map((item, idx) => (
         <div
-          key={item?.title}
+          key={item?.description}
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -51,7 +50,6 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <CardIcon>{item.icon}</CardIcon>
-            <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </div>
@@ -90,7 +88,7 @@ export const CardIcon = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={cn("text-blue-600 font-bold tracking-wide mt-4", className)}>
+    <div className={cn("text-blue-600 flex justify-center font-bold tracking-wide mt-4", className)}>
       {children}
     </div>
   );
@@ -120,7 +118,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-3 text-gray-500 tracking-wide leading-relaxed text-sm",
+        "mt-3 text-gray-700 text-center tracking-wide leading-relaxed text-base md:text-base",
         className
       )}
     >

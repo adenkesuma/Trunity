@@ -8,7 +8,7 @@ const Navbar = () => {
       <Image src={Logo} alt='logo' className='w-28 h-fit' />
       <ul className='flex items-center gap-8'>
         <li>
-          <a href='#' className='text-sm font-semibold text-gray-700'>About us</a>
+          <a href='#' className='text-sm font-semibold text-gray-700'>Tentang Trunity</a>
         </li>
         <li>
           <a href='#' className='text-sm font-semibold text-gray-700'>Service</a>
