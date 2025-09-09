@@ -3,26 +3,30 @@ import { CardBody, CardContainer, CardItem } from "../three-d-card";
 import { TeamCard } from '../team-card'
 import Image from 'next/image';
 import Founder from "@/public/assets/angelia-2.png"
+import { Instagram } from 'lucide-react';
 
 const Team = () => {
   return (
-    <div className='bg-gradient-to-bl from-blue-950 to-blue-700'>
+    <div className=''>
       <div className="container mx-auto py-10">
-        <div className="flex items-center gap-20">
+        <div className="flex items-center justify-between gap-10 mb-10">
           <div className='flex flex-col gap-6'>
             <div className="flex flex-col gap-6">
-              <h2 className="text-2xl relative z-20 md:text-4xl lg:text-5xl font-bold text-left text-black dark:text-white font-sans tracking-tight">
-                Trunity Agency who are here to guide you through your insurance agency
+              <h2 className="text-2xl relative z-20 md:text-4xl lg:text-5xl font-bold text-left text-blue-950 font-sans tracking-tight">
+                Tim di Balik Trunity Agency
               </h2>
-              <p className="text-sm text-100-600">
-                Our experienced professionals are here to guide you with expert advice, personalized support. and a commitment to helping you negative your insurance journey with confidence.
+              <p className="text-sm text-gray-500">
+                Di balik polis asuransi yang hebat, ada tim yang lebih hebat lagi. Kenali para profesional kami yang akan mendampingi Anda <br /> dengan saran ahli dan dukungan personal untuk memberdayakan keputusan Anda.
               </p>
-              <button className="py-2 px-4 rounded-xl bg-white text-blue-600 font-semibold text-sm w-fit">Explore more</button>
+              <button className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
+                <span>Follow Instagram Trunity</span>
+                <Instagram size={"18px"}/>
+              </button>
             </div>
           </div>
           <CardContainer className="inter-var w-96">
-            <CardBody className="bg-white/40 relative group/card h-auto rounded-xl border">
-              <CardItem translateZ="100" className="w-full mt-4 flex justify-center border-b">
+            <CardBody className="bg-gray-50 relative group/card h-auto rounded-xl border">
+              <CardItem translateZ="100" className="w-full mt-4 flex justify-center">
                 <Image
                   src={Founder}
                   height="1000"
@@ -31,14 +35,15 @@ const Team = () => {
                   alt="thumbnail"
                 />
               </CardItem>
-              <div className="p-6 flex flex-col items-center justify-between">
+              <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>Founder</div>
+              <div className="bg-blue-950 rounded-b-xl p-6 flex flex-col items-center justify-between">
                 <CardItem
-                  className="text-4xl text-white"
+                  className="text-3xl text-white font-bold font-sans"
                 >
                   Angelia Chen
                 </CardItem>
-                <CardItem className="text-lg">
-                  Founder
+                <CardItem className="text-sm text-gray-300 mt-4 text-center">
+                  10 tahun di industri perbankan dan 8 tahun di industri asuransi. <span className='font-bold'>7x MDRT and 1x COT</span>
                 </CardItem>
               </div>
             </CardBody>

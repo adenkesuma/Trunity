@@ -12,8 +12,8 @@ export function TeamCard() {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
       <CardContainer className="inter-var w-full">
-        <CardBody className="bg-white/40 relative group/card h-auto rounded-xl border">
-          <CardItem translateZ="100" className="w-full mt-4 flex justify-center border-b">
+        <CardBody className="bg-gray-50 relative group/card h-auto rounded-xl border">
+          <CardItem translateZ="100" className="w-full mt-4 flex justify-center">
             <Image
               src={Cindy}
               height="1000"
@@ -22,21 +22,23 @@ export function TeamCard() {
               alt="thumbnail"
             />
           </CardItem>
-          <div className="p-6 flex flex-col items-center justify-between">
+            <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
+          <div className="bg-blue-950 p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-2xl text-white"
+              className="text-xl md:text-3xl text-white font-sans font-bold"
             >
               Cindy Veronica
             </CardItem>
-            <CardItem className="text-base">
-              Executive Business Partner
+            <CardItem className="text-sm text-gray-300 mt-4 text-center">
+              Pengalaman 10 Tahun sebagai Business Manager di perbankan dan 4 tahun di industri asuransi.
+              <span className="font-bold"> 4x MDRT</span>
             </CardItem>
           </div>
         </CardBody>
       </CardContainer>
       <CardContainer className="inter-var w-full">
-        <CardBody className="bg-white/40 relative group/card h-auto rounded-xl border">
-          <CardItem translateZ="100" className="w-full mt-4 flex justify-center border-b">
+        <CardBody className="bg-gray-50 relative group/card h-auto rounded-xl border">
+          <CardItem translateZ="100" className="w-full mt-4 flex justify-center">
             <Image
               src={Vero}
               height="1000"
@@ -45,21 +47,22 @@ export function TeamCard() {
               alt="thumbnail"
             />
           </CardItem>
-          <div className="p-6 flex flex-col items-center justify-between">
+          <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
+          <div className="bg-blue-950 p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-2xl text-white"
+              className="text-xl md:text-3xl text-white font-sans font-bold"
             >
               Veronica
             </CardItem>
-            <CardItem className="text-base">
-              Executive Business Partner
+            <CardItem className="text-sm text-gray-300 mt-4 text-center">
+              Sejak 2013 berdedikasi sebagai Konsultan Bisnis Eksekutif di bidang perencanaan keuangan dan pengelolaan kekayaan
             </CardItem>
           </div>
         </CardBody>
       </CardContainer>
       <CardContainer className="inter-var w-full">
-        <CardBody className="bg-white/40 relative group/card h-auto rounded-xl border">
-          <CardItem translateZ="100" className="w-full mt-4 flex justify-center border-b">
+        <CardBody className="bg-gray-50 relative group/card h-auto rounded-xl border">
+          <CardItem translateZ="100" className="w-full mt-4 flex justify-center">
             <Image
               src={Sanny}
               height="1000"
@@ -68,21 +71,23 @@ export function TeamCard() {
               alt="thumbnail"
             />
           </CardItem>
-          <div className="p-6 flex flex-col items-center justify-between">
+          <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
+          <div className="bg-blue-950 p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-2xl text-white"
+              className="text-xl md:text-3xl text-white font-sans font-bold"
             >
               Sanny
             </CardItem>
-            <CardItem className="text-base">
-              Executive Business Partner
+            <CardItem className="text-sm text-gray-300 mt-4 text-center">
+              Pengalaman 11 Tahun berkarir di industri perbankkan dan 4 tahun di industri asuransi.
+              <span className="font-bold"> 1x MDRT</span>
             </CardItem>
           </div>
         </CardBody>
       </CardContainer>
       <CardContainer className="inter-var w-full">
-        <CardBody className="bg-white/40 relative group/card h-auto rounded-xl border">
-          <CardItem translateZ="100" className="w-full mt-4 flex justify-center border-b">
+        <CardBody className="bg-gray-50 relative group/card h-auto rounded-xl border">
+          <CardItem translateZ="100" className="w-full mt-4 flex justify-center">
             <Image
               src={Hendrik}
               height="1000"
@@ -91,14 +96,15 @@ export function TeamCard() {
               alt="thumbnail"
             />
           </CardItem>
-          <div className="p-6 flex flex-col items-center justify-between">
+          <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
+          <div className="bg-blue-950 p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-2xl text-white"
+              className="text-xl md:text-3xl text-white font-sans font-bold"
             >
               Hendrik
             </CardItem>
-            <CardItem className="text-base">
-              Executive Business Partner
+            <CardItem className="text-sm text-gray-300 mt-4 text-center">
+              Sejak 2010, saya mengabdi di industri perbankan, menyelami dunia keuangan dan memahami betul kebutuhan masyarakat.
             </CardItem>
           </div>
         </CardBody>

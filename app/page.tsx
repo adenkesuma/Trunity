@@ -12,13 +12,13 @@ import Navbar from "./_components/navbar";
 export default function Home() {
   return (
     <div>
-      <div className="container mx-auto mb-10">
+      <div className="container mx-auto">
         <Navbar />
         <div className="flex items-center gap-10">
-          <Header />
-          <DotBackground />
+          {/* <DotBackground /> */}
         </div>
       </div>
+      <Header />
       <About />
       <div className="container mx-auto">
         <Services />
