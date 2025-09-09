@@ -3,7 +3,7 @@ import { CardBody, CardContainer, CardItem } from "../three-d-card";
 import { TeamCard } from '../team-card'
 import Image from 'next/image';
 import Founder from "@/public/assets/angelia-2.png"
-import { Instagram } from 'lucide-react';
+import { Instagram, Mail } from 'lucide-react';
 
 const Team = () => {
   return (
@@ -18,10 +18,16 @@ const Team = () => {
               <p className="text-sm text-gray-500">
                 Di balik polis asuransi yang hebat, ada tim yang lebih hebat lagi. Kenali para profesional kami yang akan mendampingi Anda <br /> dengan saran ahli dan dukungan personal untuk memberdayakan keputusan Anda.
               </p>
-              <button className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
-                <span>Follow Instagram Trunity</span>
-                <Instagram size={"18px"}/>
-              </button>
+              <div className="flex items-center gap-4">
+                <button className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
+                  <span>Follow Instagram Trunity</span>
+                  <Instagram size={"18px"}/>
+                </button>
+                <div className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
+                  <span>Hubungi Trunity</span>
+                  <Mail size={"18px"} />
+                </div>
+              </div> 
             </div>
           </div>
           <CardContainer className="inter-var w-96">
@@ -38,7 +44,7 @@ const Team = () => {
               <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>Founder</div>
               <div className="bg-blue-950 rounded-b-xl p-6 flex flex-col items-center justify-between">
                 <CardItem
-                  className="text-3xl text-white font-bold font-sans"
+                  className="text-2xl text-white font-bold font-sans"
                 >
                   Angelia Chen
                 </CardItem>

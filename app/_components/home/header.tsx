@@ -1,4 +1,4 @@
-import { CircleCheckBig, Instagram } from 'lucide-react'
+import { CircleCheckBig, Instagram, Mail } from 'lucide-react'
 import React from 'react'
 import { Spotlight } from '../spotlight'
 import { cn } from '@/lib/utils'
@@ -50,10 +50,16 @@ const Header = () => {
           {/* <a href="#" target='_blank' className='py-2 px-3 rounded-xl bg-blue-600 text-white text-sm w-fit font-semibold'>
             Ngobrol Bareng Founder
           </a> */}
-          <button className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
-            <span>Follow Instagram Trunity</span>
-            <Instagram size={"18px"}/>
-          </button>
+          <div className="flex items-center gap-4">
+            <button className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
+              <span>Follow Instagram Trunity</span>
+              <Instagram size={"18px"}/>
+            </button>
+            <div className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
+              <span>Hubungi Trunity</span>
+              <Mail size={"18px"} />
+            </div>
+          </div>
           {/* <div className="flex items-center gap-8 mt-8">
             <div className="flex items-center gap-2">
               <h2 className='text-5xl text-blue-950 font-bold'>100+</h2>

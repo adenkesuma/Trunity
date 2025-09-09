@@ -25,7 +25,7 @@ export function TeamCard() {
             <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-3xl text-white font-sans font-bold"
+              className="text-xl md:text-2xl text-white font-sans font-bold"
             >
               Cindy Veronica
             </CardItem>
@@ -50,7 +50,7 @@ export function TeamCard() {
           <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-3xl text-white font-sans font-bold"
+              className="text-xl md:text-2xl text-white font-sans font-bold"
             >
               Veronica
             </CardItem>
@@ -74,7 +74,7 @@ export function TeamCard() {
           <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-3xl text-white font-sans font-bold"
+              className="text-xl md:text-2xl text-white font-sans font-bold"
             >
               Sanny
             </CardItem>
@@ -99,7 +99,7 @@ export function TeamCard() {
           <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-3xl text-white font-sans font-bold"
+              className="text-xl md:text-2xl text-white font-sans font-bold"
             >
               Hendrik
             </CardItem>
