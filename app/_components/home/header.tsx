@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-6">
         <h1 className='text-blue-950 text-6xl font-bold font-sans'>Mitra Eksklusif Perlindungan dan Pertumbuhan Aset Anda</h1>
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2">
