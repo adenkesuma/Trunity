@@ -26,7 +26,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 container mx-auto gap-6 py-10 relative">
+    <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 container mx-auto gap-6 py-8 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "h-full")}>
           <motion.div
@@ -35,7 +35,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                ? "rounded-xl cursor-pointer absolute inset-0 h-1/2 w-[65%] m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
                 ? "z-40 bg-black rounded-xl h-full w-full"
                 : "bg-black rounded-xl h-full w-full"
@@ -74,7 +74,7 @@ const ThumbnailComponent = ({
       height="500"
       width="500"
       className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
+        "object-cover object-top absolute inset-0 h-full rounded-xl w-full transition duration-200"
       )}
       alt="thumbnail"
     />

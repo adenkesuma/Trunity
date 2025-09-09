@@ -26,9 +26,9 @@ export default function Home() {
       </div>
       <WhatWeDo />
       {/* <StepByStep /> */}
-      <div className="container mx-auto">
+      {/* <div className="container mx-auto">
         <Testimoni />
-      </div>
+      </div> */}
       <Team />
     </div>
   );

@@ -10,7 +10,7 @@ import Hendrik from "@/public/assets/Hendrik.png"
 
 export function TeamCard() {
   return (
-    <div className="grid grid-cols-4 gap-10">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
       <CardContainer className="inter-var w-full">
         <CardBody className="bg-white/40 relative group/card h-auto rounded-xl border">
           <CardItem translateZ="100" className="w-full mt-4 flex justify-center border-b">
@@ -24,7 +24,7 @@ export function TeamCard() {
           </CardItem>
           <div className="p-6 flex flex-col items-center justify-between">
             <CardItem
-              className="text-4xl text-white"
+              className="text-xl md:text-2xl text-white"
             >
               Cindy Veronica
             </CardItem>
@@ -47,7 +47,7 @@ export function TeamCard() {
           </CardItem>
           <div className="p-6 flex flex-col items-center justify-between">
             <CardItem
-              className="text-4xl text-white"
+              className="text-xl md:text-2xl text-white"
             >
               Veronica
             </CardItem>
@@ -70,7 +70,7 @@ export function TeamCard() {
           </CardItem>
           <div className="p-6 flex flex-col items-center justify-between">
             <CardItem
-              className="text-4xl text-white"
+              className="text-xl md:text-2xl text-white"
             >
               Sanny
             </CardItem>
@@ -93,7 +93,7 @@ export function TeamCard() {
           </CardItem>
           <div className="p-6 flex flex-col items-center justify-between">
             <CardItem
-              className="text-4xl text-white"
+              className="text-xl md:text-2xl text-white"
             >
               Hendrik
             </CardItem>

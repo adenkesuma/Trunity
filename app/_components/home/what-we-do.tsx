@@ -4,8 +4,8 @@ import { LayoutGrid } from "./../layout-grid";
 
 export function WhatWeDo() {
   return (
-    <div className="h-screen py-20 w-full bg-blue-100 mt-18">
-      <h2 className="text-2xl md:text-5xl font-sans font-bold text-blue-600 text-center">Kegiatan Trunity</h2>
+    <div className="h-[1400px] py-20 w-full bg-blue-950/10 mt-18">
+      <h2 className="text-2xl md:text-5xl font-sans font-bold text-blue-950 text-center">Kegiatan Trunity</h2>
       <LayoutGrid cards={cards} />
     </div>
   );
@@ -81,7 +81,7 @@ const cards = [
     id: 1,
     content: <SkeletonOne />,
     className: "md:col-span-2",
-    thumbnail: "/assets/about.jpg",
+    thumbnail: "/assets/Frame-1.png",
     video:
       "/assets/fast-track.mp4",
   },
@@ -89,7 +89,7 @@ const cards = [
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail: "/assets/about-2.jpg",
+    thumbnail: "/assets/Frame-2.png",
     video:
       "/assets/masterday.mp4",
   },
@@ -97,7 +97,7 @@ const cards = [
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnail: "/assets/visi.jpg",
+    thumbnail: "/assets/Frame-4.png",
     video:
       "/assets/potentialday.mp4",
   },
@@ -105,7 +105,7 @@ const cards = [
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
-    thumbnail: "/assets/visi-2.jpg",
+    thumbnail: "/assets/Frame-3.png",
     video:
       "/assets/unityday.mp4",
   },
