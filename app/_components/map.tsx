@@ -111,7 +111,7 @@ const MapLocation = () => {
             
             <div className="mb-6">
               <h4 className="font-medium text-gray-800 mb-2">Kontak:</h4>
-              <p className="text-gray-600">Telepon: (021) 1234-5678</p>
+              <p className="text-gray-600">Telepon: +62 811-655-228</p>
               <p className="text-gray-600">Email: trunityagency@gmail.com</p>
             </div>
             
