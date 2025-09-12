@@ -55,18 +55,18 @@ const FAQ = () => {
       </h2>
       <div className="space-y-4">
         {faqData.map((faq, index) => (
-          <div key={faq.id} className="border border-gray-100 rounded-lg shadow-sm">
+          <div key={faq.id} className="border border-gray-100 rounded-2xl bg-gray-100">
             <button
-              className="flex justify-between items-center w-full p-4 text-left font-medium text-gray-900 hover:bg-gray-50 rounded-lg"
+              className="flex justify-between items-center w-full p-4 text-left font-medium text-gray-900 hover:bg-gray-50 rounded-2xl"
               onClick={() => toggleAccordion(index)}
               aria-expanded={activeIndex === index}
               aria-controls={`faq-content-${index}`}
             >
               <span>{faq.question}</span>
               {activeIndex === index ? (
-                <ChevronUp className="h-5 w-5 text-blue-600" />
+                <ChevronUp className="h-7 w-7 text-blue-600" />
               ) : (
-                <ChevronDown className="h-5 w-5 text-blue-600" />
+                <ChevronDown className="h-7 w-7 text-blue-600" />
               )}
             </button>
             <div

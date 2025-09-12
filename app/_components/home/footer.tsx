@@ -28,6 +28,15 @@ const Footer = () => {
               <a href='#' className='text-sm font-semibold text-white'>Testimonials</a>
             </li>
             <li>
+              <a href='#' className='text-sm font-semibold text-white'>Lokasi</a>
+            </li>
+            <li>
+              <a href='#' className='text-sm font-semibold text-white'>Layanan</a>
+            </li>
+            <li>
+              <a href='#' className='text-sm font-semibold text-white'>Galeri</a>
+            </li>
+            <li>
               <a href='#' className='text-sm font-semibold text-white'>FAQ</a>
             </li>
           </ul>

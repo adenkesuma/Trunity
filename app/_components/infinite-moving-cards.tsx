@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { Quote } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -98,7 +99,7 @@ export const InfiniteMovingCards = ({
               <span className="relative z-20 text-sm leading-[1.6] font-normal text-white">
                 {item.quote}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
+              <div className="relative z-20 mt-6 flex flex-row justify-between items-center border-t border-white/30 pt-3">
                 <span className="flex flex-col gap-1">
                   <span className="text-base leading-[1.6] font-bold text-gray-200">
                     {item.name}
@@ -107,6 +108,7 @@ export const InfiniteMovingCards = ({
                     {item.title}
                   </span>
                 </span>
+                <Quote size={"30px"} />
               </div>
             </blockquote>
           </li>
