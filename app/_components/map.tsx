@@ -1,75 +1,67 @@
-"use client"
-import { useEffect, useRef, useState } from 'react';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
+'use client';
 
-const defaultIcon = L.icon({
-  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-  iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  tooltipAnchor: [16, -28],
-  shadowSize: [41, 41]
-});
-
-L.Marker.prototype.options.icon = defaultIcon;
+import React, { useEffect, useRef, useState } from 'react';
 
 const MapLocation = () => {
   const companyAddress = "Ruko Sentosaland, Jl. T. Amir Hamzah No.9n, Sei Agul, Kec. Medan Bar, Kota Medan, Sumatera Utara 20235";
-  const encodedAddress = encodeURIComponent(companyAddress);
-  const googleMapsUrl = 'https://www.google.com/maps/place/Trunity/@3.6068904,98.6663189,17z/data=!3m1!4b1!4m6!3m5!1s0x303131f29abc49eb:0xdb26518946492d6b!8m2!3d3.6068904!4d98.6663189!16s%2Fg%2F11xt21ppjj?hl=en-GB&entry=ttu&g_ep=EgoyMDI5MDkwOS4wIKXMDSoASAFQAw%3D%3D';
+  const googleMapsUrl = 'https://www.google.com/maps/place/Trunity/@3.6068904,98.6663189,17z/data=!3m1!4b1!4m6!3m5!1s0x303131f29abc49eb:0xdb26518946492d6b!8m2!3d3.6068904!4d98.6663189!16s%2Fg%2F11xt21ppjj?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDkwOS4wIKXMDSoASAFQAw%3D%3D';
   
-  // Koordinat Trunity Medan
   const latitude = 3.6068904;
   const longitude = 98.6663189;
   
   const mapRef = useRef<HTMLDivElement>(null);
-  const [isClient, setIsClient] = useState(false);
+  const [isMapLoaded, setIsMapLoaded] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
-  }, []);
+    // Pastikan hanya dijalankan di client
+    if (typeof window === 'undefined') return;
 
-  useEffect(() => {
-    if (isClient && mapRef.current) {
-      // Initialize map
-      const map = L.map(mapRef.current).setView([latitude, longitude], 16);
-      
-      // Add OpenStreetMap tiles
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);
-      
-      // Add custom icon
-      const customIcon = L.icon({
-        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-        iconSize: [35, 45],
-        iconAnchor: [17, 42],
-        popupAnchor: [0, -40]
-      });
-      
-      // Add marker
-      L.marker([latitude, longitude], { icon: customIcon })
-        .addTo(map)
-        .bindPopup(`
-          <div style="font-weight: bold; margin-bottom: 5px;">Trunity</div>
-          <div>${companyAddress}</div>
-        `)
-        .openPopup();
-      
-      // Add click event to open Google Maps
-      map.on('click', () => {
-        window.open(googleMapsUrl, '_blank');
-      });
+    const initMap = async () => {
+      try {
+        // Dynamic import untuk Leaflet
+        const L = await import('leaflet');
+        
+        // Fix leaflet default icon
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        delete (L.Icon.Default.prototype as any)._getIconUrl;
+        L.Icon.Default.mergeOptions({
+          iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
+          iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+          shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+        });
 
-      // Clean up function
-      return () => {
-        map.remove();
-      };
-    }
-  }, [isClient, latitude, longitude, companyAddress, googleMapsUrl]);
+        if (mapRef.current) {
+          // Initialize map
+          const map = L.map(mapRef.current).setView([latitude, longitude], 16);
+          
+          // Add OpenStreetMap tiles
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+          
+          // Add marker
+          L.marker([latitude, longitude])
+            .addTo(map)
+            .bindPopup(`
+              <div style="font-weight: bold; margin-bottom: 5px;">Trunity</div>
+              <div>${companyAddress}</div>
+            `)
+            .openPopup();
+          
+          // Add click event to open Google Maps
+          map.on('click', () => {
+            window.open(googleMapsUrl, '_blank');
+          });
+
+          setIsMapLoaded(true);
+        }
+      } catch (error) {
+        console.error('Failed to load Leaflet:', error);
+      }
+    };
+
+    initMap();
+  }, [latitude, longitude, companyAddress, googleMapsUrl]);
 
   return (
     <section className="py-16 bg-gray-100">
@@ -84,15 +76,13 @@ const MapLocation = () => {
         </div>
         
         <div className="flex flex-col lg:flex-row gap-8 items-center">
-          <div className="w-full lg:w-2/3 h-[435px] rounded-2xl overflow-hidden">
-            {/* Map container - will be initialized by Leaflet */}
+          <div className="w-full lg:w-2/3 h-[445px] rounded-2xl overflow-hidden">
             <div 
               ref={mapRef} 
               className="w-full h-full cursor-pointer"
               style={{ backgroundColor: '#e5e7eb' }}
             >
-              {/* Fallback content while map loads */}
-              {!isClient && (
+              {!isMapLoaded && (
                 <div className="w-full h-full flex items-center justify-center bg-gray-200">
                   <div className="text-center p-4">
                     <div className="animate-pulse mb-4">
