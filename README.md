@@ -1,1 +1,1 @@
-Trunity Agency
+Trunity
