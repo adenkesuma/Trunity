@@ -33,12 +33,12 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
             onClick={() => handleClick(card)}
             className={cn(
               card.className,
-              "relative overflow-hidden",
+              "relative overflow-hidden cursor-pointer",
               selected?.id === card.id
                 ? "rounded-xl cursor-pointer absolute inset-0 h-[70vh] w-[65%] m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
-                ? "z-40 bg-black rounded-xl h-full w-full"
-                : "bg-black rounded-xl h-full w-full"
+                ? "z-40 rounded-xl h-full w-full"
+                : "rounded-xl h-full w-full"
             )}
             layoutId={`card-${card.id}`}
           >
@@ -74,7 +74,7 @@ const ThumbnailComponent = ({
       height="500"
       width="500"
       className={cn(
-        "object-cover object-top absolute inset-0 h-full rounded-xl w-full transition duration-200"
+        "border-8 border-white/30 object-cover object-top absolute inset-0 h-full rounded-xl w-full transition duration-200"
       )}
       alt="thumbnail"
     />

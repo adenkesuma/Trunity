@@ -49,7 +49,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div className="container mx-auto py-12">
       <h2 className="text-2xl relative z-20 md:text-4xl lg:text-5xl font-bold text-center mb-8 text-blue-950 font-sans tracking-tight">
         Pertanyaan Umum tentang Layanan Asuransi Kami
       </h2>

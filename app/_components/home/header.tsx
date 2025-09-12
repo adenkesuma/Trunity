@@ -28,7 +28,7 @@ const Header = () => {
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="lightblue"
       /> */}
-      <Image src={Logo} alt="logo" className='opacity-[3%] w-full absolute'/>
+      <Image src={Logo} alt="logo" className='opacity-[6%] w-full absolute'/>
       <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
         <div className="flex flex-col items-center gap-6">
           <h1 className='text-blue-950 text-6xl font-bold text-center font-sans mb-4'>One Stop Solution for Insurance & Financial Growth</h1>

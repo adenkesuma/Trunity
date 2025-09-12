@@ -4,12 +4,14 @@ import { InfiniteMovingCards } from "./../infinite-moving-cards";
  
 export function Testimonials() {
   return (
-    <div className="container mx-auto my-20">
-      <div className="flex flex-col items-center gap-2 mb-4">
-        <h2 className="text-2xl relative z-20 md:text-4xl lg:text-5xl font-bold text-left text-blue-950 font-sans tracking-tight">
-          Testimonials
-        </h2>
-        <p className="text-sm text-gray-600">Dengar langsung dari mereka yang telah merasakan manfaat dan hasilnya. Setiap cerita adalah bukti nyata komitmen kami.</p>
+    <div className="bg-gradient-to-bl from-blue-900 to-blue-600 py-6">
+      <div className="container mx-auto my-20">
+        <div className="flex flex-col items-center gap-2 mb-4">
+          <h2 className="text-2xl relative z-20 md:text-4xl lg:text-5xl font-bold text-left text-white font-sans tracking-tight">
+            Testimonials
+          </h2>
+          <p className="text-sm text-gray-300">Dengar langsung dari mereka yang telah merasakan manfaat dan hasilnya. Setiap cerita adalah bukti nyata komitmen kami.</p>
+        </div>
       </div>
       <div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
@@ -24,32 +26,28 @@ export function Testimonials() {
  
 const testimonials = [
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+    quote: "Waktu mobil saya tabrakan, saya sempat panik. Tapi proses klaimnya jauh lebih cepat dan mudah dari yang saya bayangkan. Dalam 3 hari semua sudah beres, dan saya bisa pakai mobil lagi. Terima kasih untuk agen yang sangat membantu.",
+    name: "Budi Santoso",
+    title: "Nasabah Asuransi Kendaraan",
   },
   {
-    quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+    quote: "Awalnya ragu mau beli asuransi kesehatan, tapi ternyata sangat membantu saat anak saya dirawat di rumah sakit. Tidak perlu pusing urus administrasi atau biaya, fokus saja pada kesembuhan anak.",
+    name: "Siti Aisyah",
+    title: "Ibu Rumah Tangga",
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+    quote: "Sebagai freelancer, saya tidak punya jaminan kesehatan dari perusahaan. Asuransi ini pilihan yang tepat untuk melindungi income saya. Klaim rawat jalan pun prosesnya mudah lewat aplikasi.",
+    name: "Ahmad Rizky",
+    title: "Desainer Grafis",
   },
   {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+    quote: "Kebakaran di rumah tetangga membuat saya sadar akan pentingnya asuransi properti. Alhamdulillah, saya sudah terlindungi. Proses survey kerusakan dan pencairan klaimnya transparan dan adil.",
+    name: "Dewi Lestari",
+    title: "Pemilik Toko",
   },
   {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
-  },
+    quote: "Kecelakaan di jalan tol bikin rugi banyak kalau tidak ada asuransi. Penggantian kerugian untuk pihak ketiga dan perbaikan mobil sendiri berjalan lancar. Hanya perlu telepon satu kali, sisanya dihandle sampai selesai.",
+    name: "Joko Wijaya",
+    title: "Karyawan Swasta",
+  }
 ];

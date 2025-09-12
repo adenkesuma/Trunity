@@ -1,24 +1,36 @@
 import React from 'react'
-import { TextHoverEffect } from '../text-hover-effect'
 import { Instagram, Mail } from 'lucide-react'
+import CTA from '../cta'
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-br py-10 from-blue-950 to-blue-700">
+    <div className="bg-gradient-to-bl py-10 from-blue-950 to-blue-700">
       <div className="container mx-auto">
-        <TextHoverEffect text='Trunity' />
+        <CTA />
         <div className="flex items-center justify-between">
           <span className="text-white text-base">
-            &copy; 2025 Copyright All Reserved Trunity Agency
+            Copyright &copy; 2025 Trunity Agency -  All Rights Reserved.
           </span>
-          <div className="flex items-center gap-2">
-            <div className="p-2 rounded-xl bg-white/20">
-              <Instagram />
-            </div>
-            <div className="p-2 rounded-xl bg-white/20">
-              <Mail /> 
-            </div>
-          </div>
+          <ul className='flex items-center gap-8'>
+            <li>
+              <a href='#' className='text-sm font-semibold text-white'>About Trunity</a>
+            </li>
+            <li>
+              <a href='#' className='text-sm font-semibold text-white'>Focus</a>
+            </li>
+            <li>
+              <a href='#' className='text-sm font-semibold text-white'>What We Do</a>
+            </li>
+            <li>
+              <a href='#' className='text-sm font-semibold text-white'>Team</a>
+            </li>
+            <li>
+              <a href='#' className='text-sm font-semibold text-white'>Testimonials</a>
+            </li>
+            <li>
+              <a href='#' className='text-sm font-semibold text-white'>FAQ</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
