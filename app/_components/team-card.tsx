@@ -10,7 +10,7 @@ import Hendrik from "@/public/assets/Hendrik.png"
 
 export function TeamCard() {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 items-start gap-4 md:gap-10">
+    <div className="grid grid-cols-2 lg:grid-cols-4 items-start gap-4 md:gap-6 xl:gap-10">
       <CardContainer className="inter-var w-full">
         <CardBody className="bg-gray-50 relative group/card h-auto rounded-xl border">
           <CardItem translateZ="100" className="w-full mt-4 flex justify-center">
@@ -18,14 +18,14 @@ export function TeamCard() {
               src={Cindy}
               height="1000"
               width="1000"
-              className="h-72 md:h-96 w-44 md:w-60 object-cover rounded-xl group-hover/card:shadow-none"
+              className="h-72 xl:h-96 w-44 xl:w-60 object-cover rounded-xl group-hover/card:shadow-none"
               alt="thumbnail"
             />
           </CardItem>
             <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-4 md:p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-2xl text-white font-sans font-bold"
+              className="text-lg text-center md:text-xl lg:text-2xl text-white font-sans font-bold"
             >
               Cindy Veronica
             </CardItem>
@@ -43,14 +43,14 @@ export function TeamCard() {
               src={Vero}
               height="1000"
               width="1000"
-              className="h-72 md:h-96 w-44 md:w-60 object-cover rounded-xl group-hover/card:shadow-none"
+              className="h-72 xl:h-96 w-44 xl:w-60 object-cover rounded-xl group-hover/card:shadow-none"
               alt="thumbnail"
             />
           </CardItem>
           <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-4 md:p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-2xl text-white font-sans font-bold"
+              className="text-lg md:text-xl lg:text-2xl text-white font-sans font-bold"
             >
               Veronica
             </CardItem>
@@ -67,14 +67,14 @@ export function TeamCard() {
               src={Sanny}
               height="1000"
               width="1000"
-              className="h-72 md:h-96 w-44 md:w-60 object-cover rounded-xl group-hover/card:shadow-none"
+              className="h-72 xl:h-96 w-44 xl:w-60 object-cover rounded-xl group-hover/card:shadow-none"
               alt="thumbnail"
             />
           </CardItem>
           <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-4 md:p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-2xl text-white font-sans font-bold"
+              className="text-lg md:text-xl lg:text-2xl text-white font-sans font-bold"
             >
               Sanny
             </CardItem>
@@ -92,14 +92,14 @@ export function TeamCard() {
               src={Hendrik}
               height="1000"
               width="1000"
-              className="h-72 md:h-96 w-44 md:w-60 object-cover rounded-xl group-hover/card:shadow-none"
+              className="h-72 xl:h-96 w-44 xl:w-60 object-cover rounded-xl group-hover/card:shadow-none"
               alt="thumbnail"
             />
           </CardItem>
           <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-4 md:p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
-              className="text-xl md:text-2xl text-white font-sans font-bold"
+              className="text-lg md:text-xl lg:text-2xl text-white font-sans font-bold"
             >
               Hendrik
             </CardItem>

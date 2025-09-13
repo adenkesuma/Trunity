@@ -73,7 +73,7 @@ const Navbar = () => {
   return (
     <nav className='px-4 sm:px-0 relative mx-auto container mt-6 flex items-center justify-between gap-6'>
       <Image src={Logo} alt='logo' className='w-36 h-fit' />
-      <ul className='hidden lg:flex items-center gap-8'>
+      <ul className='hidden xl:flex items-center gap-8'>
         <li>
           <a href='#about' className='text-sm font-semibold text-gray-700'>Tentang Trunity</a>
         </li>
@@ -103,7 +103,7 @@ const Navbar = () => {
         <button onClick={() => setIsOpen(!isOpen)} className="cursor-pointer py-2 px-3 rounded-xl h-fit font-semibold text-sm bg-blue-600 text-white">Hubungi Kami</button>  
         <Popover>
           <PopoverTrigger asChild>
-            <button className='cursor-pointer block lg:hidden p-1.5 rounded-xl border border-gray-300 bg-gray-100'>
+            <button className='cursor-pointer block xl:hidden p-1.5 rounded-xl border border-gray-300 bg-gray-100'>
               <Menu className='text-gray-900' />
             </button>
           </PopoverTrigger>

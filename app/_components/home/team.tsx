@@ -24,7 +24,7 @@ const Team = () => {
               <p className="text-sm text-gray-500">
                 Di balik polis asuransi yang hebat, ada tim yang lebih hebat lagi. Kenali para profesional kami yang akan mendampingi Anda <br /> dengan saran ahli dan dukungan personal untuk memberdayakan keputusan Anda.
               </p>
-              <div className="flex items-center gap-4">
+              <div className="flex flex-wrap items-center gap-4">
                 <a href='https://www.instagram.com/trunityagency/' className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
                   <span>Follow Instagram Trunity</span>
                   <Instagram size={"18px"}/>
@@ -43,7 +43,7 @@ const Team = () => {
                   src={Founder}
                   height="1000"
                   width="1000"
-                  className="h-96 w-60 object-cover rounded-xl group-hover/card:shadow-none"
+                  className="h-72 xl:h-96 w-44 xl:w-60 object-cover rounded-xl group-hover/card:shadow-none"
                   alt="thumbnail"
                 />
               </CardItem>
