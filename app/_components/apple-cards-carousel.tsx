@@ -149,7 +149,7 @@ export const Card = ({
   return (
     <motion.div
       layoutId={layout ? `card-${card.title}` : undefined}
-      className="relative z-10 flex h-full w-56 flex-col items-start justify-between overflow-hidden rounded-3xl bg-white p-4 md:w-72"
+      className="relative z-10 flex h-full w-56 flex-col items-start justify-between overflow-hidden rounded-3xl bg-white p-4 md:w-80"
     >
       <div className="w-full">
         <div className="mb-4 flex items-center justify-center rounded-xl border border-gray-200 bg-gray-100">
