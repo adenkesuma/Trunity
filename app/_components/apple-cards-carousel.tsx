@@ -151,7 +151,7 @@ export const Card = ({
       layoutId={layout ? `card-${card.title}` : undefined}
       className="relative z-10 flex h-full w-56 flex-col items-start justify-between overflow-hidden rounded-3xl bg-white p-4 md:w-80"
     >
-      <div className="w-full">
+      <div className="w-full mb-4">
         <div className="mb-4 flex items-center justify-center rounded-xl border border-gray-200 bg-gray-100">
           <Image src ={card.thumbnail} alt="image thumbnail" width={1000} height={1000} className="rounded-xl" />
           {/* <svg className="w-12 h-12 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
