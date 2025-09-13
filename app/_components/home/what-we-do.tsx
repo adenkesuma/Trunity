@@ -4,8 +4,8 @@ import { LayoutGrid } from "./../layout-grid";
 
 export function WhatWeDo() {
   return (
-    <div id="activity" className="h-[1400px] py-20 w-full bg-gradient-to-bl from-blue-950 to-blue-600 mt-18">
-      <h2 className="text-2xl md:text-5xl font-sans font-bold text-white text-center">Kegiatan Trunity</h2>
+    <div id="activity" className="md:h-[1400px] py-14 md:py-20 w-full bg-gradient-to-bl from-blue-950 to-blue-600 mt-18">
+      <h2 className="text-3xl md:text-5xl font-sans font-bold text-white text-center">Kegiatan Trunity</h2>
       <LayoutGrid cards={cards} />
     </div>
   );
@@ -80,7 +80,7 @@ const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "md:col-span-2",
+    className: "col-span-2",
     thumbnail: "/assets/Frame-1.png",
     video:
       "/assets/fast-track.mp4",
@@ -104,7 +104,7 @@ const cards = [
   {
     id: 4,
     content: <SkeletonFour />,
-    className: "md:col-span-2",
+    className: "col-span-2",
     thumbnail: "/assets/Frame-3.png",
     video:
       "/assets/unityday.mp4",

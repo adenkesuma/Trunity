@@ -33,9 +33,9 @@ const Header = () => {
         fill="lightblue"
       /> */}
       <Image src={Logo} alt="logo" className='opacity-[6%] w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
-      <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
+      <div className="relative z-10 mx-auto w-full container p-4 pt-20 md:pt-0">
         <div className="flex flex-col items-center gap-6">
-          <h1 className='text-blue-950 text-4xl lg:text-6xl font-bold text-center font-sans mb-4'>One Stop Solution for Insurance & Financial Growth</h1>
+          <h1 className='text-blue-950 text-4xl md:text-6xl max-w-5xl font-bold text-center font-sans mb-4'>One Stop Solution for Insurance & Financial Growth</h1>
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
                 <CircleCheckBig className='text-blue-600' size={'18px'} />

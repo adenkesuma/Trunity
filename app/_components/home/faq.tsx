@@ -49,15 +49,15 @@ const FAQ = () => {
   ];
 
   return (
-    <div id='faq' className="container mx-auto py-12">
-      <h2 className="text-2xl relative z-20 md:text-4xl lg:text-5xl font-bold text-center mb-8 text-blue-950 font-sans tracking-tight">
+    <div id='faq' className="container mx-auto py-12 px-4 sm:px-0">
+      <h2 className="text-3xl relative z-20 md:text-5xl font-bold text-center mb-8 text-blue-950 font-sans tracking-tight">
         Pertanyaan Umum tentang Layanan Asuransi Kami
       </h2>
       <div className="space-y-4">
         {faqData.map((faq, index) => (
           <div key={faq.id} className="border border-gray-100 rounded-2xl bg-gray-100">
             <button
-              className="flex justify-between items-center w-full p-4 text-left font-medium text-gray-900 hover:bg-gray-50 rounded-2xl"
+              className="flex justify-between items-center w-full p-4 text-left text-sm md:text-base font-medium text-gray-900 hover:bg-gray-50 rounded-2xl"
               onClick={() => toggleAccordion(index)}
               aria-expanded={activeIndex === index}
               aria-controls={`faq-content-${index}`}

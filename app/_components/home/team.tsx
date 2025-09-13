@@ -14,11 +14,11 @@ const Team = () => {
 
   return (
     <div id='team' className=''>
-      <div className="container mx-auto py-10">
+      <div className="container mx-auto py-10 px-4 sm:px-0">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-10">
           <div className='flex flex-col gap-6'>
             <div className="flex flex-col gap-6">
-              <h2 className="relative z-20 text-4xl lg:text-5xl font-bold text-left text-blue-950 font-sans tracking-tight">
+              <h2 className="relative z-20 text-3xl md:text-5xl font-bold text-left text-blue-950 font-sans tracking-tight">
                 Tim di Balik Trunity Agency
               </h2>
               <p className="text-sm text-gray-500">

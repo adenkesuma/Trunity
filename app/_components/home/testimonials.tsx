@@ -5,12 +5,12 @@ import { InfiniteMovingCards } from "./../infinite-moving-cards";
 export function Testimonials() {
   return (
     <div id="testimonials" className="bg-gradient-to-bl from-blue-900 to-blue-600 py-6">
-      <div className="container mx-auto my-10">
+      <div className="container mx-auto my-10 px-4 sm:px-0">
         <div className="flex flex-col items-center gap-2 mb-4">
-          <h2 className="text-2xl relative z-20 md:text-4xl lg:text-5xl font-bold text-left text-white font-sans tracking-tight">
+          <h2 className="text-3xl relative z-20 md:text-5xl font-bold text-left text-white font-sans tracking-tight">
             Testimonials
           </h2>
-          <p className="text-sm text-gray-300">Dengar langsung dari mereka yang telah merasakan manfaat dan hasilnya. Setiap cerita adalah bukti nyata komitmen kami.</p>
+          <p className="text-center text-sm text-gray-300">Dengar langsung dari mereka yang telah merasakan manfaat dan hasilnya. Setiap cerita adalah bukti nyata komitmen kami.</p>
         </div>
       </div>
       <div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">

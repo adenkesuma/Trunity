@@ -4,10 +4,10 @@ import CTA from '../cta'
 const Footer = () => {
   return (
     <div className="bg-gradient-to-bl py-10 from-blue-950 to-blue-700">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 sm:px-0">
         <CTA />
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <span className="text-white text-base">
+          <span className="text-white text-sm md:text-base">
             Copyright &copy; 2025 Trunity Agency -  All Rights Reserved.
           </span>
           <ul className='flex flex-wrap justify-center mt-4 md:mt-0 items-center gap-4 md:gap-8'>

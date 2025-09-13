@@ -26,9 +26,9 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 container mx-auto gap-6 py-8 relative">
+    <div className="px-4 sm:px-0 w-full md:h-full grid grid-cols-3 container mx-auto gap-6 py-8 relative">
       {cards.map((card, i) => (
-        <div key={i} className={cn(card.className, "h-full")}>
+        <div key={i} className={cn(card.className, "h-60 md:h-full")}>
           <motion.div
             onClick={() => handleClick(card)}
             className={cn(
@@ -71,8 +71,8 @@ const ThumbnailComponent = ({
     <motion.img
       layoutId={`image-${card.id}-image`}
       src={card.thumbnail}
-      height="500"
-      width="500"
+      height="1000"
+      width="1000"
       className={cn(
         "border-8 border-white/30 object-cover object-top absolute inset-0 h-full rounded-xl w-full transition duration-200"
       )}

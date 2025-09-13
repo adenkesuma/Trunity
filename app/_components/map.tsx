@@ -65,12 +65,12 @@ const MapLocation = () => {
 
   return (
     <section id='map' className="py-16 bg-gray-100">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 sm:px-0">
         <div className="text-center mb-10">
-          <h2 className="text-2xl relative z-20 md:text-4xl lg:text-5xl font-bold text-center mb-2 text-blue-950 font-sans tracking-tight">
+          <h2 className="text-3xl relative z-20 md:text-5xl font-bold text-center mb-2 text-blue-950 font-sans tracking-tight">
             Lokasi Kami
           </h2>
-          <p className="text-lg text-gray-600 mx-auto">
+          <p className="text-sm text-gray-600 mx-auto">
             Kunjungi kantor kami untuk konsultasi langsung mengenai layanan asuransi yang tepat untuk kebutuhan Anda.
           </p>
         </div>
@@ -100,19 +100,19 @@ const MapLocation = () => {
           
           <div className="w-full lg:w-1/3 bg-white p-6 rounded-2xl">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Lokasi Kantor</h3>
-            <p className="text-gray-600 mb-6">{companyAddress}</p>
+            <p className="text-gray-600 mb-6 text-sm md:text-base">{companyAddress}</p>
             
             <div className="mb-6">
               <h4 className="font-medium text-gray-800 mb-2">Jam Operasional:</h4>
-              <p className="text-gray-600">Senin - Jumat: 09.00 - 17.30 WIB</p>
-              <p className="text-gray-600">Sabtu: 09.00 - 13.00 WIB</p>
-              <p className="text-gray-600">Minggu: Tutup</p>
+              <p className="text-sm md:text-base text-gray-600">Senin - Jumat: 09.00 - 17.30 WIB</p>
+              <p className="text-sm md:text-base text-gray-600">Sabtu: 09.00 - 13.00 WIB</p>
+              <p className="text-sm md:text-base text-gray-600">Minggu: Tutup</p>
             </div>
             
             <div className="mb-6">
               <h4 className="font-medium text-gray-800 mb-2">Kontak:</h4>
-              <p className="text-gray-600">Telepon: +62 811-655-228</p>
-              <p className="text-gray-600">Email: trunityagency@gmail.com</p>
+              <p className="text-sm md:text-base text-gray-600">Telepon: +62 811-655-228</p>
+              <p className="text-sm md:text-base text-gray-600">Email: trunityagency@gmail.com</p>
             </div>
             
             <a

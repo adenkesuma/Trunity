@@ -5,124 +5,73 @@ import { Carousel, Card } from "./apple-cards-carousel";
 
 export function Services() {
   const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index} layout={true} />
+    <Card key={card.src} card={card} index={index} layout={false} />
   ));
 
   return (
     <div id="services" className="bg-gray-100">
-      <div className="container mx-auto w-full h-full py-10">
-        <h2 className="mx-auto text-2xl md:text-5xl font-bold text-blue-950 font-sans">
+      <div className="container mx-auto w-full h-full py-10 px-4 sm:px-0">
+        <h2 className="mx-auto text-3xl md:text-5xl font-bold text-blue-950 font-sans text-center">
           Layanan Kami
         </h2>
+        <p className="text-center text-gray-600 mt-2 max-w-2xl mx-auto">
+          Temukan berbagai layanan asuransi kami yang dapat disesuaikan dengan kebutuhan Anda
+        </p>
         <Carousel items={cards} />
       </div>
     </div>
   );
 }
 
-const DummyContent = () => {
-  return (
-    <>
-      {[...new Array(3).fill(1)].map((_, index) => {
-        return (
-          <div
-            key={"dummy-content" + index}
-            className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
-          >
-            <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
-            </p>
-            <img
-              src="https://assets.aceternity.com/macbook.png"
-              alt="Macbook mockup from Aceternity UI"
-              height="500"
-              width="500"
-              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
-          </div>
-        );
-      })}
-    </>
-  );
-};
-
 const data = [
   {
-    category: "AXA Health Protector",
-    title: "Solusi proteksi kesehatan inovatif dan nyaman.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
-  },
-  {
-    category: "Asuransi Tambahan AXA Health Protector",
-    title: "Solusi proteksi kesehatan inovatif dan nyaman.",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
-  },
-  {
     category: "AXA Critical Protector",
-    title: "Solusi proteksi yang menyeluruh untuk penyakit kritis di segala tahapan mulai dari tahap awal, tahap menengah dan tahap akhir.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    title: "Asuransi Penyakit Kritis",
+    src: "/assets/pdf/AXA Critical Protector.pdf",
   },
   {
-    category: "AXA Medicash Pro Seven",
-    title: "Solusi perlindungan kesehatan yang memberikan manfaatkan rawat inap maupun perawatan ICU.",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "AXA Long Term Life Protector",
+    title: "Solusi proteksi jiwa yang bikin hidup makin tenang",
+    src: "/assets/pdf/AXA Long Term Life Protector_All Plan_02Des2024.pdf",
   },
   {
-    category: "AXA Cancer & Save",
-    title: "Solusi perlindungan atas resiko penyakit kanker dan meninggal dunia.",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "Axa Smart Edu Protector",
+    title: "Produk asuransi jiwa dwiguna yang memberikan solusi persiapan dana pendidikan buah hati sekaligus proteksi jiwa anda.",
+    src: "/assets/pdf/AXA Smart Edu Protector_291024.pdf",
   },
   {
-    category: "Asuransi Kesehatan SmartMedicare Domestik Individu & Keluarga",
-    title: "Perlindungan kesehatan untuk individu dan keluarga yang terjangkau untuk manfaat Rawat Inap.",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "AXA Wealth Protector",
+    title: "suransi Jiwa Dwiguna Kombinasi simple & hebat",
+    src: "/assets/pdf/AXA Wealth Protector Des2023.pdf",
   },
   {
-    category: "Asuransi Kesehatan SmartCare Executive SME",
-    title: "Perlindungan kesehatan untuk usaha berskala mikro medium min. 3 karyawan mulai dari rawat inap hingga persalinan.",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "AXA Future Protector",
+    title: "Perlindungan jiwa yang dirancang dengan sentuhan inovasi dan kebebasan memilih cara melindungi mereka yang paling anda cintai.",
+    src: "/assets/pdf/Brosur_AXA Future Protector_120925.pdf",
   },
   {
-    category: "AXA Critical Elite Solutions",
-    title: "Perlindungan selama 15 tahun untuk penyakit kritis Tahap Awal dan Taha AKhir dengan masa premi selama 5 tahun pertama.",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "Maestro Infinite Protection",
+    title: "Asuransi jiwa komprehensif untuk kesejahteraan orang-orang tercina.",
+    src: "/assets/pdf/Brosur AXA Infinite Protection Update2023.pdf",
   },
   {
-    category: "Asuransi Kesehatan SmartMedicare untuk individu & keluarga",
-    title: "Perlindungan kesehatan bagi anda dan keluarga dengan manfaat dan jaminan yang luas di indonesia dan luar negeri.",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "AXA Link Protector",
+    title: "Melengkapi perlindungan jiwa unit link dengan manfaat perlindungan yang lengkap dan manfaat bonus dana investasi untuk keberlangsungan proteksi.",
+    src: "/assets/pdf/Brosur AXA Link Protector (1).pdf",
   },
   {
     category: "Maestro Optima Care",
-    title: "Perlindungan total dan perawatan medis terbaik.",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    title: "Asuransi kesehatan komprehensif yang memberikan perlindungan yang terbaik bagi anda dan keluarga tercinta.",
+    src: "/assets/pdf/Maestro Optima Care Revamp - Agustus 2025 (2).pdf",
   },
   {
-    category: "Asuransi Kesehatan ProMedicare",
-    title: "Perlindungan kesehatan untuk anda dan keluarga yang menyeluruh di indonesia dan luar negeri.",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "Maestro Prestige Link",
+    title: "Produk asuransi jiwa dan investasi yang memberikan perindungan sekaligus mengembangkan dana anda.",
+    src: "/assets/pdf/Maestro Prestige Link.pdf",
   },
   {
-    category: "Asuransi Kesehatan ProMedicare CDE",
-    title: "Perlindungan kesehatan untuk anda dan keluarga yang terjangkau di indonesia dan luar negeri.",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "AXA Health Protector",
+    title: "AXA Health Protector adalah produk asuransi kesehatan perorangan yang memberikan manfaat utama berupa manfaat rawat inap dan pembedahan, manfaat rawat jalan, serta manfaat tambahan lainnya",
+    src: "/assets/pdf/RIPLAY versi Umum AXA Health Protector 2.8_10 plan_.pdf",
   },
 ];

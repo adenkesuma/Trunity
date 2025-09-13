@@ -34,11 +34,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full font-sans py-20 mx-auto container"
+      className="px-4 sm:px-0 w-full font-sans py-20 mx-auto container"
       ref={containerRef}
     >
       <div className="mx-auto">
-        <h2 className="text-2xl md:text-5xl text-white font-bold">
+        <h2 className="text-3xl md:text-5xl text-white font-bold">
           Mari Kenal Lebih Dekat Bersama Trunity
         </h2>
       </div>
