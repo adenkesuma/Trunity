@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { CardBody, CardContainer, CardItem } from "../three-d-card";
 import { TeamCard } from '../team-card'
@@ -6,6 +8,10 @@ import Founder from "@/public/assets/angelia-2.png"
 import { Instagram, Mail } from 'lucide-react';
 
 const Team = () => {
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:trunityagency@gmail.com';
+  }; 
+
   return (
     <div id='team' className=''>
       <div className="container mx-auto py-10">
@@ -19,14 +25,14 @@ const Team = () => {
                 Di balik polis asuransi yang hebat, ada tim yang lebih hebat lagi. Kenali para profesional kami yang akan mendampingi Anda <br /> dengan saran ahli dan dukungan personal untuk memberdayakan keputusan Anda.
               </p>
               <div className="flex items-center gap-4">
-                <button className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
+                <a href='https://www.instagram.com/trunityagency/' className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
                   <span>Follow Instagram Trunity</span>
                   <Instagram size={"18px"}/>
-                </button>
-                <div className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
+                </a>
+                <button onClick={handleEmailClick} className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
                   <span>Hubungi Trunity</span>
                   <Mail size={"18px"} />
-                </div>
+                </button> 
               </div> 
             </div>
           </div>

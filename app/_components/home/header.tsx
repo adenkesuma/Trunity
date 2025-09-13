@@ -1,11 +1,16 @@
+"use client"
+
 import { CircleCheckBig, Instagram, Mail } from 'lucide-react'
 import React from 'react'
-import { Spotlight } from '../spotlight'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Logo from "@/public/assets/Trunity.png"
 
 const Header = () => {
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:trunityagency@gmail.com';
+  }; 
+
   return (
      <div className="relative flex h-[40rem] w-full overflow-hidden rounded-md antialiased md:items-center md:justify-center">
       {/* <div
@@ -51,14 +56,14 @@ const Header = () => {
             Ngobrol Bareng Founder
           </a> */}
           <div className="flex items-center gap-4">
-            <button className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
+            <a href='https://www.instagram.com/trunityagency/' className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
               <span>Follow Instagram Trunity</span>
               <Instagram size={"18px"}/>
-            </button>
-            <div className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
+            </a>
+            <button onClick={handleEmailClick} className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-bl from-blue-400 to-blue-800">
               <span>Hubungi Trunity</span>
               <Mail size={"18px"} />
-            </div>
+            </button>
           </div>
           {/* <div className="flex items-center gap-8 mt-8">
             <div className="flex items-center gap-2">
