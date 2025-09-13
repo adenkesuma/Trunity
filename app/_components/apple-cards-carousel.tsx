@@ -13,6 +13,7 @@ import {
 } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -23,6 +24,7 @@ type Card = {
   src: string;
   title: string;
   category: string;
+  thumbnail: string;
 };
 
 export const CarouselContext = createContext<{
@@ -147,13 +149,14 @@ export const Card = ({
   return (
     <motion.div
       layoutId={layout ? `card-${card.title}` : undefined}
-      className="relative z-10 flex h-full w-56 flex-col items-start justify-between overflow-hidden rounded-3xl bg-white p-4 md:h-96 md:w-72"
+      className="relative z-10 flex h-full w-56 flex-col items-start justify-between overflow-hidden rounded-3xl bg-white p-4 md:w-72"
     >
       <div className="w-full">
-        <div className="mb-4 flex items-center justify-center rounded-lg p-3 border border-gray-200 bg-gray-100">
-          <svg className="w-12 h-12 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <div className="mb-4 flex items-center justify-center rounded-xl border border-gray-200 bg-gray-100">
+          <Image src ={card.thumbnail} alt="image thumbnail" width={1000} height={1000} className="rounded-xl" />
+          {/* <svg className="w-12 h-12 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
-          </svg>
+          </svg> */}
         </div>
         
         <motion.p

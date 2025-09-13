@@ -27,51 +27,61 @@ const data = [
   {
     category: "AXA Critical Protector",
     title: "Asuransi Penyakit Kritis",
-    src: "/assets/pdf/AXA Critical Protector.pdf",
+    src: "/pdf/AXA Critical Protector.pdf",
+    thumbnail: "/assets/thumbnail-pdf/1.png"
   },
   {
     category: "AXA Long Term Life Protector",
     title: "Solusi proteksi jiwa yang bikin hidup makin tenang",
-    src: "/assets/pdf/AXA Long Term Life Protector_All Plan_02Des2024.pdf",
+    src: "/pdf/AXA Long Term Life Protector_All Plan_02Des2024.pdf",
+    thumbnail: "/assets/thumbnail-pdf/2.png"
   },
   {
     category: "Axa Smart Edu Protector",
     title: "Produk asuransi jiwa dwiguna yang memberikan solusi persiapan dana pendidikan buah hati sekaligus proteksi jiwa anda.",
-    src: "/assets/pdf/AXA Smart Edu Protector_291024.pdf",
+    src: "/pdf/AXA Smart Edu Protector_291024.pdf",
+    thumbnail: "/assets/thumbnail-pdf/3.png"
   },
   {
     category: "AXA Wealth Protector",
     title: "suransi Jiwa Dwiguna Kombinasi simple & hebat",
-    src: "/assets/pdf/AXA Wealth Protector Des2023.pdf",
+    src: "/pdf/AXA Wealth Protector Des2023.pdf",
+    thumbnail: "/assets/thumbnail-pdf/4.png"
   },
   {
     category: "AXA Future Protector",
     title: "Perlindungan jiwa yang dirancang dengan sentuhan inovasi dan kebebasan memilih cara melindungi mereka yang paling anda cintai.",
-    src: "/assets/pdf/Brosur_AXA Future Protector_120925.pdf",
+    src: "/pdf/Brosur_AXA Future Protector_120925.pdf",
+    thumbnail: "/assets/thumbnail-pdf/5.png"
   },
   {
     category: "Maestro Infinite Protection",
     title: "Asuransi jiwa komprehensif untuk kesejahteraan orang-orang tercina.",
-    src: "/assets/pdf/Brosur AXA Infinite Protection Update2023.pdf",
+    src: "/pdf/Brosur AXA Infinite Protection Update2023.pdf",
+    thumbnail: "/assets/thumbnail-pdf/6.png"
   },
   {
     category: "AXA Link Protector",
     title: "Melengkapi perlindungan jiwa unit link dengan manfaat perlindungan yang lengkap dan manfaat bonus dana investasi untuk keberlangsungan proteksi.",
-    src: "/assets/pdf/Brosur AXA Link Protector (1).pdf",
+    src: "/pdf/Brosur AXA Link Protector (1).pdf",
+    thumbnail: "/assets/thumbnail-pdf/7.png"
   },
   {
     category: "Maestro Optima Care",
     title: "Asuransi kesehatan komprehensif yang memberikan perlindungan yang terbaik bagi anda dan keluarga tercinta.",
-    src: "/assets/pdf/Maestro Optima Care Revamp - Agustus 2025 (2).pdf",
+    src: "/pdf/Maestro Optima Care Revamp - Agustus 2025 (2).pdf",
+    thumbnail: "/assets/thumbnail-pdf/8.png"
   },
   {
     category: "Maestro Prestige Link",
     title: "Produk asuransi jiwa dan investasi yang memberikan perindungan sekaligus mengembangkan dana anda.",
-    src: "/assets/pdf/Maestro Prestige Link.pdf",
+    src: "/pdf/Maestro Prestige Link.pdf",
+    thumbnail: "/assets/thumbnail-pdf/9.png"
   },
   {
     category: "AXA Health Protector",
     title: "AXA Health Protector adalah produk asuransi kesehatan perorangan yang memberikan manfaat utama berupa manfaat rawat inap dan pembedahan, manfaat rawat jalan, serta manfaat tambahan lainnya",
-    src: "/assets/pdf/RIPLAY versi Umum AXA Health Protector 2.8_10 plan_.pdf",
+    src: "/pdf/RIPLAY versi Umum AXA Health Protector 2.8_10 plan_.pdf",
+    thumbnail: "/assets/thumbnail-pdf/10.png"
   },
 ];
