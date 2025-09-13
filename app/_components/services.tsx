@@ -80,7 +80,7 @@ const data = [
   },
   {
     category: "AXA Health Protector",
-    title: "AXA Health Protector adalah produk asuransi kesehatan perorangan yang memberikan manfaat utama berupa manfaat rawat inap dan pembedahan, manfaat rawat jalan, serta manfaat tambahan lainnya",
+    title: "AXA Health Protector adalah produk asuransi kesehatan rawat inap dan pembedahan, manfaat rawat jalan, serta manfaat tambahan lainnya",
     src: "/pdf/RIPLAY versi Umum AXA Health Protector 2.8_10 plan_.pdf",
     thumbnail: "/assets/thumbnail-pdf/10.png"
   },
