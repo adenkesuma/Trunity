@@ -10,7 +10,7 @@ import Hendrik from "@/public/assets/Hendrik.png"
 
 export function TeamCard() {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       <CardContainer className="inter-var w-full">
         <CardBody className="bg-gray-50 relative group/card h-auto rounded-xl border">
           <CardItem translateZ="100" className="w-full mt-4 flex justify-center">

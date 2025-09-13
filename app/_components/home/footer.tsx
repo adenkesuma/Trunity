@@ -1,5 +1,4 @@
 import React from 'react'
-import { Instagram, Mail } from 'lucide-react'
 import CTA from '../cta'
 
 const Footer = () => {
@@ -7,11 +6,11 @@ const Footer = () => {
     <div className="bg-gradient-to-bl py-10 from-blue-950 to-blue-700">
       <div className="container mx-auto">
         <CTA />
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row items-center justify-between">
           <span className="text-white text-base">
             Copyright &copy; 2025 Trunity Agency -  All Rights Reserved.
           </span>
-          <ul className='flex items-center gap-8'>
+          <ul className='flex flex-wrap justify-center mt-4 md:mt-0 items-center gap-4 md:gap-8'>
             <li>
               <a href='#about' className='text-sm font-semibold text-white'>Tentang Trunity</a>
             </li>

@@ -12,7 +12,7 @@ export function About() {
       title: "Tentang Trunity",
       content: (
         <div>
-          <p className="mb-8 text-sm font-normal text-neutral-800 md:text-base dark:text-neutral-200">
+          <p className="mb-8 text-sm lg:text-base font-normal text-gray-300">
             Kami adalah agency yang berkomitmen menumbuhkan kepemimpinan, kolaborasi dan solidaritas serta memasterkan setiap potensial menciptakan pemimpin-pemimpin baru untuk meraih kesuksesan tanpa batas bersama 
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -21,14 +21,14 @@ export function About() {
               alt="startup template"
               width={500}
               height={500}
-              className="border-8 rounded-xl border-white/30 h-32 w-full object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-72 lg:h-96"
+              className="border-8 rounded-xl border-white/30 h-40 w-full object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-72 lg:h-96"
             />
             <Image
               src={About2}
               alt="startup template"
               width={500}
               height={500}
-              className="border-8 rounded-xl border-white/30 h-32 w-full object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-72 lg:h-96"
+              className="border-8 rounded-xl border-white/30 h-40 w-full object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-72 lg:h-96"
             />
           </div>
         </div>
@@ -38,7 +38,7 @@ export function About() {
       title: "Visi Trunity",
       content: (
         <div>
-          <p className="mb-8 text-sm font-normal text-neutral-800 md:text-base dark:text-neutral-200">
+          <p className="mb-8 text-sm lg:text-base font-normal text-gray-300">
             Menjadi perusahaan agency terpercaya dengan memberikan solusi dan pelayanan terbaik kepada nasabah, serta menciptakan ekosistem kerja yang mendorong pertumbuhan tanpa batas.
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -47,14 +47,14 @@ export function About() {
               alt="startup template"
               width={500}
               height={500}
-              className="border-8 rounded-xl border-white/30 h-32 w-full object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-72 lg:h-96"
+              className="border-8 rounded-xl border-white/30 h-40 w-full object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-72 lg:h-96"
             />
             <Image
               src={Visi2}
               alt="startup template"
               width={500}
               height={500}
-              className="border-8 rounded-xl border-white/30 h-32 w-full object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-72 lg:h-96"
+              className="border-8 rounded-xl border-white/30 h-40 w-full object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-72 lg:h-96"
             />
           </div>
         </div>

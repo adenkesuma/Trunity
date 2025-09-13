@@ -108,7 +108,7 @@ export const InfiniteMovingCards = ({
                     {item.title}
                   </span>
                 </span>
-                <Quote size={"30px"} />
+                <Quote size={"30px"} className="text-white" />
               </div>
             </blockquote>
           </li>

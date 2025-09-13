@@ -15,10 +15,10 @@ const Team = () => {
   return (
     <div id='team' className=''>
       <div className="container mx-auto py-10">
-        <div className="flex items-center justify-between gap-10 mb-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-10">
           <div className='flex flex-col gap-6'>
             <div className="flex flex-col gap-6">
-              <h2 className="text-2xl relative z-20 md:text-4xl lg:text-5xl font-bold text-left text-blue-950 font-sans tracking-tight">
+              <h2 className="relative z-20 text-4xl lg:text-5xl font-bold text-left text-blue-950 font-sans tracking-tight">
                 Tim di Balik Trunity Agency
               </h2>
               <p className="text-sm text-gray-500">
@@ -36,7 +36,7 @@ const Team = () => {
               </div> 
             </div>
           </div>
-          <CardContainer className="inter-var w-96">
+          <CardContainer className="inter-var w-full md:w-96">
             <CardBody className="bg-gray-50 relative group/card h-auto rounded-xl border">
               <CardItem translateZ="100" className="w-full mt-4 flex justify-center">
                 <Image

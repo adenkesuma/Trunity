@@ -3,7 +3,8 @@
 import Image from 'next/image'
 import Logo from "@/public/assets/Trunity.png"
 import React, { useState } from 'react'
-import { X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 
 const Navbar = () => {
    const [isOpen, setIsOpen] = useState(false);
@@ -72,7 +73,7 @@ const Navbar = () => {
   return (
     <nav className='relative mx-auto container mt-6 flex items-center justify-between gap-6'>
       <Image src={Logo} alt='logo' className='w-36 h-fit' />
-      <ul className='flex items-center gap-8'>
+      <ul className='hidden lg:flex items-center gap-8'>
         <li>
           <a href='#about' className='text-sm font-semibold text-gray-700'>Tentang Trunity</a>
         </li>
@@ -98,7 +99,46 @@ const Navbar = () => {
           <a href='#faq' className='text-sm font-semibold text-gray-700'>FAQ</a>
         </li>
       </ul>
-      <button onClick={() => setIsOpen(!isOpen)} className="cursor-pointer py-2 px-3 rounded-xl h-fit font-semibold text-sm bg-blue-600 text-white">Hubungi Kami</button>  
+      <div className="flex items-center gap-2">
+        <button onClick={() => setIsOpen(!isOpen)} className="cursor-pointer py-2 px-3 rounded-xl h-fit font-semibold text-sm bg-blue-600 text-white">Hubungi Kami</button>  
+        <Popover>
+          <PopoverTrigger asChild>
+            <button className='block lg:hidden p-1.5 rounded-xl border border-gray-300 bg-gray-100'>
+              <Menu className='text-gray-900' />
+            </button>
+          </PopoverTrigger>
+          <PopoverContent className="w-52 mr-4 p-0 rounded-xl shadow-none">
+            <h2 className="p-3 leading-none text-base font-semibold text-white bg-blue-600 rounded-t-xl">Menu</h2>
+            <div className="border-b"></div>
+            <ul className='flex flex-col py-2'>
+              <li className='w-full'>
+                <a href='#about' className='block cursor-pointer text-sm font-semibold text-gray-700 py-2 px-3 rounded-xl hover:bg-gray-100 w-full'>Tentang Trunity</a>
+              </li>
+              <li className='w-full'>
+                <a href='#focus' className='block cursor-pointer text-sm font-semibold text-gray-700 py-2 px-3 rounded-xl hover:bg-gray-100 w-full'>Fokus</a>
+              </li>
+              <li className='w-full'>
+                <a href='#activity' className='block cursor-pointer text-sm font-semibold text-gray-700 py-2 px-3 rounded-xl hover:bg-gray-100 w-full'>Kegiatan Trunity</a>
+              </li>
+              <li className='w-full'>
+                <a href='#services' className='block cursor-pointer text-sm font-semibold text-gray-700 py-2 px-3 rounded-xl hover:bg-gray-100 w-full'>Layanan</a>
+              </li>
+              <li className='w-full'>
+                <a href='#team' className='block cursor-pointer text-sm font-semibold text-gray-700 py-2 px-3 rounded-xl hover:bg-gray-100 w-full'>Tim Trunity</a>
+              </li>
+              <li className='w-full'>
+                <a href='#testimonials' className='block cursor-pointer text-sm font-semibold text-gray-700 py-2 px-3 rounded-xl hover:bg-gray-100 w-full'>Testimonial</a>
+              </li>
+              <li className='w-full'>
+                <a href='#map' className='block cursor-pointer text-sm font-semibold text-gray-700 py-2 px-3 rounded-xl hover:bg-gray-100 w-full'>Lokasi</a>
+              </li>
+              <li className='w-full'>
+                <a href='#faq' className='block cursor-pointer text-sm font-semibold text-gray-700 py-2 px-3 rounded-xl hover:bg-gray-100 w-full'>FAQ</a>
+              </li>
+            </ul>
+          </PopoverContent>
+        </Popover>
+      </div>
 
       {isOpen && (
         <div className="absolute top-full right-0 mt-2 w-80 bg-white rounded-2xl border border-gray-200 z-50">
