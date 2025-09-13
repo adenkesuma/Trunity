@@ -4,8 +4,8 @@ import { InfiniteMovingCards } from "./../infinite-moving-cards";
  
 export function Testimonials() {
   return (
-    <div className="bg-gradient-to-bl from-blue-900 to-blue-600 py-6">
-      <div className="container mx-auto my-20">
+    <div id="testimonials" className="bg-gradient-to-bl from-blue-900 to-blue-600 py-6">
+      <div className="container mx-auto my-10">
         <div className="flex flex-col items-center gap-2 mb-4">
           <h2 className="text-2xl relative z-20 md:text-4xl lg:text-5xl font-bold text-left text-white font-sans tracking-tight">
             Testimonials

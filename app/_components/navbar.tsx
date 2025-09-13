@@ -8,31 +8,28 @@ const Navbar = () => {
       <Image src={Logo} alt='logo' className='w-36 h-fit' />
       <ul className='flex items-center gap-8'>
         <li>
-          <a href='#' className='text-sm font-semibold text-gray-700'>About Trunity</a>
+          <a href='#about' className='text-sm font-semibold text-gray-700'>Tentang Trunity</a>
         </li>
         <li>
-          <a href='#' className='text-sm font-semibold text-gray-700'>Focus</a>
+          <a href='#focus' className='text-sm font-semibold text-gray-700'>Fokus</a>
         </li>
         <li>
-          <a href='#' className='text-sm font-semibold text-gray-700'>What We Do</a>
+          <a href='#activity' className='text-sm font-semibold text-gray-700'>Kegiatan Trunity</a>
         </li>
         <li>
-          <a href='#' className='text-sm font-semibold text-gray-700'>Team</a>
+          <a href='#services' className='text-sm font-semibold text-gray-700'>Layanan</a>
         </li>
         <li>
-          <a href='#' className='text-sm font-semibold text-gray-700'>Testimonials</a>
+          <a href='#team' className='text-sm font-semibold text-gray-700'>Tim Trunity</a>
         </li>
         <li>
-          <a href='#' className='text-sm font-semibold text-gray-700'>Lokasi</a>
+          <a href='#testimonials' className='text-sm font-semibold text-gray-700'>Testimonial</a>
         </li>
         <li>
-          <a href='#' className='text-sm font-semibold text-gray-700'>Layanan</a>
+          <a href='#map' className='text-sm font-semibold text-gray-700'>Lokasi</a>
         </li>
         <li>
-          <a href='#' className='text-sm font-semibold text-gray-700'>Galeri</a>
-        </li>
-        <li>
-          <a href='#' className='text-sm font-semibold text-gray-700'>FAQ</a>
+          <a href='#faq' className='text-sm font-semibold text-gray-700'>FAQ</a>
         </li>
       </ul>
       <button className="py-2 px-3 rounded-xl h-fit font-semibold text-sm bg-blue-600 text-white">Contact Us</button>  

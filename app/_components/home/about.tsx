@@ -106,7 +106,7 @@ export function About() {
     },
   ];
   return (
-    <div className="relative w-full overflow-clip bg-gradient-to-tl from-blue-950 to-blue-600">
+    <div id="about" className="relative w-full overflow-clip bg-gradient-to-tl from-blue-950 to-blue-600">
       <Timeline data={data} />
     </div>
   );

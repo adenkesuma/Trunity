@@ -64,7 +64,7 @@ const MapLocation = () => {
   }, [latitude, longitude, companyAddress, googleMapsUrl]);
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section id='map' className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-2xl relative z-20 md:text-4xl lg:text-5xl font-bold text-center mb-2 text-blue-950 font-sans tracking-tight">

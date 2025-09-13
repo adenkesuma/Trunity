@@ -2,12 +2,13 @@ import { About } from "./_components/home/about";
 import FAQ from "./_components/home/faq";
 import Footer from "./_components/home/footer";
 import Header from "./_components/home/header";
-import Services from "./_components/home/services";
+import Focus from "./_components/home/focus";
 import Team from "./_components/home/team";
 import { Testimonials } from "./_components/home/testimonials";
 import { WhatWeDo } from "./_components/home/what-we-do";
 import MapLocation from "./_components/map";
 import SeoHead from "./_components/seo-head";
+import { Services } from "./_components/services";
 
 export default function Home() {
   return (
@@ -19,8 +20,9 @@ export default function Home() {
       />
       <Header />
       <About />
-      <Services />
+      <Focus />
       <WhatWeDo />
+      <Services />
       <Team />
       <Testimonials />
       <MapLocation /> 

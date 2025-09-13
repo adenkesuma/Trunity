@@ -7,7 +7,7 @@ import { Instagram, Mail } from 'lucide-react';
 
 const Team = () => {
   return (
-    <div className=''>
+    <div id='team' className=''>
       <div className="container mx-auto py-10">
         <div className="flex items-center justify-between gap-10 mb-10">
           <div className='flex flex-col gap-6'>

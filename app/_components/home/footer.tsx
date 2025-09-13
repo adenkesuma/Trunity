@@ -13,31 +13,28 @@ const Footer = () => {
           </span>
           <ul className='flex items-center gap-8'>
             <li>
-              <a href='#' className='text-sm font-semibold text-white'>About Trunity</a>
+              <a href='#about' className='text-sm font-semibold text-white'>Tentang Trunity</a>
             </li>
             <li>
-              <a href='#' className='text-sm font-semibold text-white'>Focus</a>
+              <a href='#focus' className='text-sm font-semibold text-white'>Fokus</a>
             </li>
             <li>
-              <a href='#' className='text-sm font-semibold text-white'>What We Do</a>
+              <a href='#activity' className='text-sm font-semibold text-white'>Kegiatan Trunity</a>
             </li>
             <li>
-              <a href='#' className='text-sm font-semibold text-white'>Team</a>
+              <a href='#services' className='text-sm font-semibold text-white'>Layanan</a>
             </li>
             <li>
-              <a href='#' className='text-sm font-semibold text-white'>Testimonials</a>
+              <a href='#team' className='text-sm font-semibold text-white'>Tim Trunity</a>
             </li>
             <li>
-              <a href='#' className='text-sm font-semibold text-white'>Lokasi</a>
+              <a href='#testimonials' className='text-sm font-semibold text-white'>Testimonial</a>
             </li>
             <li>
-              <a href='#' className='text-sm font-semibold text-white'>Layanan</a>
+              <a href='#map' className='text-sm font-semibold text-white'>Lokasi</a>
             </li>
             <li>
-              <a href='#' className='text-sm font-semibold text-white'>Galeri</a>
-            </li>
-            <li>
-              <a href='#' className='text-sm font-semibold text-white'>FAQ</a>
+              <a href='#faq' className='text-sm font-semibold text-white'>FAQ</a>
             </li>
           </ul>
         </div>
