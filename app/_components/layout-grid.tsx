@@ -26,16 +26,16 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="px-4 sm:px-0 w-full md:h-full grid grid-cols-3 container mx-auto gap-6 py-8 relative">
+    <div className="px-4 sm:px-0 w-full md:h-full grid grid-cols-3 container mx-auto gap-4 md:gap-6 py-8 relative">
       {cards.map((card, i) => (
-        <div key={i} className={cn(card.className, "h-60 md:h-full")}>
+        <div key={i} className={cn(card.className, "h-44 sm:h-60 md:h-full")}>
           <motion.div
             onClick={() => handleClick(card)}
             className={cn(
               card.className,
               "relative overflow-hidden cursor-pointer",
               selected?.id === card.id
-                ? "rounded-xl cursor-pointer absolute inset-0 h-[70vh] w-[65%] m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                ? "rounded-xl cursor-pointer absolute inset-0 md:h-[70vh] h-72 w-[90%] md:w-[65%] m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
                 ? "z-40 rounded-xl h-full w-full"
                 : "rounded-xl h-full w-full"

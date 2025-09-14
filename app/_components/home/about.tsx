@@ -65,35 +65,35 @@ export function About() {
       content: (
         <div>
           <div className="mb-8 flex flex-col gap-4">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
               <div className="text-3xl font-bold text-white">1.</div>
               <div className="flex flex-col pl-2">
                 <span className="text-lg font-semibold text-white">Mendorong Pertumbuhan Agen</span>
                 <span className="text-sm font-regular text-gray-300">Menciptakan lingkungan yang mendukung pertumbuhan agen melalui pelatihan, mentoring, dan sistem yang terbukti efektif.</span>
               </div>
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
               <div className="text-3xl font-bold text-white">2.</div>
               <div className="flex flex-col">
                 <span className="text-lg font-semibold text-white">Membangun Komunitas Yang Solid</span>
                 <span className="text-sm font-regular text-gray-300">Menumbuhkan budaya kerja yang kolaboratif, saling mendukung, dan berbagi pengalaman demi pertumbuhan bersama.</span>
               </div>
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
               <div className="text-3xl font-bold text-white">3.</div>
               <div className="flex flex-col">
                 <span className="text-lg font-semibold text-white">Meningkatkan Kesejahteraan Agen</span>
                 <span className="text-sm font-regular text-gray-300">Memberikan peluang karier dengan insentif yang menarik, serta jenjang karier yang jelas untuk kesejahteraan jangka panjang.</span>
               </div>
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
               <div className="text-3xl font-bold text-white">4.</div>
               <div className="flex flex-col">
                 <span className="text-lg font-semibold text-white">Apresiasi Kepada Team</span>
                 <span className="text-sm font-regular text-gray-300">Memberikan berbagai bentuk penghargaan, baik secara finansial maupun non-finansial, sebagai bentuk apresiasi atas prestasi agen dan leader.</span>
               </div>
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-start gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
               <div className="text-3xl font-bold text-white">5.</div>
               <div className="flex flex-col">
                 <span className="text-lg font-semibold text-white">Memberikan Pelayanan Terbaik</span>
