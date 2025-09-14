@@ -20,7 +20,7 @@ const SkeletonOne = () => {
       <p className="font-normal text-base text-white"></p>
       <div className="font-normal flex flex-col text-base my-4 max-w-lg text-neutral-200">
         <span className="text-sm">- Program pelatihan full 2 hari</span>
-        <span className="text-sm">- 90 hari pendampingan untuk emnjadi warrior sejati di dunia agency</span>
+        <span className="text-sm">- 90 hari pendampingan untuk menjadi warrior sejati di dunia agency</span>
       </div>
     </div>
   );
