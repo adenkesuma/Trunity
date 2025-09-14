@@ -14,7 +14,7 @@ export function Services() {
         <h2 className="mx-auto text-3xl md:text-5xl font-bold text-blue-950 font-sans text-left">
           Layanan Kami
         </h2>
-        <p className="text-left text-gray-600 mt-2 max-w-2xl mx-auto">
+        <p className="text-left text-gray-600 mt-2">
           Temukan berbagai layanan asuransi kami yang dapat disesuaikan dengan kebutuhan Anda
         </p>
         <Carousel items={cards} />
