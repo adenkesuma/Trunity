@@ -1,2 +1,2 @@
-Trunity Agency Insurance
+Trunity Agency
 
