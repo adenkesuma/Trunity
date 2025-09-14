@@ -64,9 +64,9 @@ const FAQ = () => {
             >
               <span>{faq.question}</span>
               {activeIndex === index ? (
-                <ChevronUp className="h-7 w-7 text-blue-600" />
+                <ChevronUp className="h-7 w-7 shrink-0 text-blue-600" />
               ) : (
-                <ChevronDown className="h-7 w-7 text-blue-600" />
+                <ChevronDown className="h-7 w-7 shrink-0 text-blue-600" />
               )}
             </button>
             <div
