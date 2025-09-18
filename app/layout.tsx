@@ -15,45 +15,41 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "TRUITY Agency Insurance - One Stop Insurance Solution",
-    template: "%s | TRUITY Agency Insurance"
+    default: "TRUITY Agency Insurance - Solusi Asuransi Terlengkap di Medan",
+    template: "%s | TRUITY Agency Insurance Medan"
   },
-  description: "TRUITY Agency Insurance menyediakan solusi asuransi lengkap untuk perlindungan finansial keluarga dan bisnis Anda. Asuransi Jiwa, Kesehatan, Properti, dan Kendaraan.",
-  keywords: "asuransi, insurance agency, asuransi jiwa, asuransi kesehatan, agency asuransi medan, trunity agency asuransi medan, asuransi properti, asuransi kendaraan, financial planning, TRUITY, Trunity Agency, Trunity agency medan, Trunity Medan, Agency Asuransi Medan, Trunity agency medan terbaik",
+  description: "TRUITY Agency Insurance Medan menyediakan asuransi jiwa, kesehatan, properti, dan kendaraan terbaik. Perlindungan finansial keluarga & bisnis. Lokasi: Jl. T. Amir Hamzah No.9n, Medan. Telepon: +62 811-655-228",
+  keywords: "asuransi medan, insurance agency medan, asuransi jiwa medan, asuransi kesehatan medan, trunity agency medan, asuransi properti medan, asuransi kendaraan medan, financial planning medan, agency asuransi terbaik medan, asuransi keluarga medan, asuransi bisnis medan",
   authors: [{ name: "TRUITY Agency Insurance" }],
   creator: "TRUITY Agency Insurance",
   publisher: "TRUITY Agency Insurance",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL('https://www.truity.com'),
+  metadataBase: new URL('https://www.trunityagency.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    url: 'https://www.truity.com',
-    siteName: 'TRUITY Agency Insurance',
-    title: 'TRUITY Agency Insurance - One Stop Insurance Solution',
-    description: 'Solusi asuransi lengkap untuk perlindungan finansial keluarga dan bisnis Anda.',
+    url: 'https://www.trunityagency.com',
+    siteName: 'TRUITY Agency Insurance Medan',
+    title: 'TRUITY Agency Insurance - Solusi Asuransi Terlengkap di Medan',
+    description: 'Agency asuransi terpercaya di Medan untuk asuransi jiwa, kesehatan, properti, dan kendaraan. Perlindungan finansial terbaik untuk keluarga dan bisnis Anda.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'TRUITY Agency Insurance',
+        alt: 'TRUITY Agency Insurance Medan - Solusi Asuransi Terlengkap',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TRUITY Agency Insurance - One Stop Insurance Solution',
-    description: 'Solusi asuransi lengkap untuk perlindungan finansial keluarga dan bisnis Anda.',
+    site: '@trunityagency',
+    creator: '@trunityagency',
+    title: 'TRUITY Agency Insurance - Solusi Asuransi Terlengkap di Medan',
+    description: 'Agency asuransi terpercaya di Medan untuk perlindungan finansial keluarga dan bisnis Anda.',
     images: ['/twitter-image.jpg'],
-    creator: '@truityinsurance',
   },
   robots: {
     index: true,
@@ -67,8 +63,15 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'your-google-verification-code', // GANTI dengan kode verifikasi Anda
   },
+  category: 'insurance',
+  other: {
+    'geo.placename': 'Medan, Sumatera Utara',
+    'geo.region': 'ID-SU',
+    'geo.position': '3.5952;98.6722',
+    'ICBM': '3.5952, 98.6722'
+  }
 };
 
 export default function RootLayout({
@@ -79,6 +82,23 @@ export default function RootLayout({
   return (
     <html lang="id">
       <head>
+        {/* Google Analytics */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX`} // GANTI dengan ID Google Analytics Anda
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XXXXXXX'); // GANTI dengan ID Google Analytics Anda
+            `,
+          }}
+        />
+        
+        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -86,18 +106,92 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "InsuranceAgency",
               "name": "TRUITY Agency Insurance",
-              "description": "One Stop Solution for Insurance & Financial Growth",
-              "url": "https://www.truity.com",
+              "description": "Solusi Asuransi Terlengkap di Medan - Asuransi Jiwa, Kesehatan, Properti, dan Kendaraan",
+              "url": "https://www.trunityagency.com",
               "telephone": "+62 811-655-228",
+              "email": "info@trunityagency.com",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Ruko Sentosaland, Jl. T. Amir Hamzah No.9n, Sei Agul, Kec. Medan Bar, Kota Medan, Sumatera Utara 20235",
+                "streetAddress": "Ruko Sentosaland, Jl. T. Amir Hamzah No.9n, Sei Agul",
                 "addressLocality": "Medan",
                 "addressRegion": "Sumatera Utara",
-                "postalCode": "20235"
+                "postalCode": "20235",
+                "addressCountry": "ID"
               },
-              "openingHours": "Mo-Fr 09:00-17:30",
-              "serviceArea": "Indonesia"
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "3.5952",
+                "longitude": "98.6722"
+              },
+              "openingHours": [
+                "Mo-Fr 09:00-17:30",
+                "Sa 09:00-14:00"
+              ],
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ],
+                  "opens": "09:00",
+                  "closes": "17:30"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Saturday",
+                  "opens": "09:00",
+                  "closes": "14:00"
+                }
+              ],
+              "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 3.5952,
+                  "longitude": 98.6722
+                },
+                "geoRadius": 50000
+              },
+              "priceRange": "$$",
+              "sameAs": [
+                "https://www.instagram.com/trunityagency",
+                "https://www.facebook.com/trunityagency",
+                "https://www.linkedin.com/company/trunityagency"
+              ]
+            })
+          }}
+        />
+        
+        {/* Additional Local Business Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "TRUITY Agency Insurance",
+              "image": "https://www.trunityagency.com/og-image.jpg",
+              "telephone": "+62 811-655-228",
+              "email": "info@trunityagency.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Ruko Sentosaland, Jl. T. Amir Hamzah No.9n",
+                "addressLocality": "Medan",
+                "addressRegion": "Sumatera Utara",
+                "postalCode": "20235",
+                "addressCountry": "Indonesia"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "3.5952",
+                "longitude": "98.6722"
+              },
+              "openingHours": "Mo-Fr 09:00-17:30, Sa 09:00-14:00",
+              "priceRange": "$$"
             })
           }}
         />

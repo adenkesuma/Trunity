@@ -18,7 +18,7 @@ export default function ServerSeoHead({
   article = false,
   pathname = '' 
 }: ServerSeoHeadProps) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.truity.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.trunityagency.com';
   const url = canonical || `${baseUrl}${pathname}`;
   const ogImage = image || `${baseUrl}/og-image.jpg`;
 
