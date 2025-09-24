@@ -5,7 +5,7 @@ import { LayoutGrid } from "./../layout-grid";
 export function WhatWeDo() {
   return (
     <div id="activity" className="h-full md:h-[1000px] lg:h-[1400px] py-14 md:py-20 w-full bg-gradient-to-bl from-blue-950 to-blue-600 mt-18">
-      <h2 className="text-3xl md:text-5xl font-sans font-bold text-white text-center">Kegiatan Trunity</h2>
+      <h2 className="text-3xl md:text-5xl font-sans font-bold text-white text-center">Kegiatan Trunity Agency</h2>
       <LayoutGrid cards={cards} />
     </div>
   );

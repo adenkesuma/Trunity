@@ -22,12 +22,14 @@ export function TeamCard() {
               alt="thumbnail"
             />
           </CardItem>
-            <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-4 md:p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
               className="text-lg text-center md:text-xl lg:text-2xl text-white font-sans font-bold"
             >
               Cindy Veronica
+            </CardItem>
+            <CardItem className='text-lg font-normal mt-2 text-white/90'>
+              Executive Business Partner
             </CardItem>
             <CardItem className="text-xs md:text-sm text-gray-300 mt-2 md:mt-4 text-center">
               Pengalaman 10 Tahun sebagai Business Manager di perbankan dan 4 tahun di industri asuransi.
@@ -47,12 +49,14 @@ export function TeamCard() {
               alt="thumbnail"
             />
           </CardItem>
-          <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-4 md:p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
               className="text-lg md:text-xl lg:text-2xl text-white font-sans font-bold"
             >
               Veronica
+            </CardItem>
+            <CardItem className='text-lg font-normal mt-2 text-white/90'>
+              Executive Business Partner
             </CardItem>
             <CardItem className="text-xs md:text-sm text-gray-300 mt-2 md:mt-4 text-center">
               Sejak 2013 berdedikasi sebagai Konsultan Bisnis Eksekutif di bidang perencanaan keuangan.
@@ -71,12 +75,14 @@ export function TeamCard() {
               alt="thumbnail"
             />
           </CardItem>
-          <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-4 md:p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
               className="text-lg md:text-xl lg:text-2xl text-white font-sans font-bold"
             >
               Sanny
+            </CardItem>
+            <CardItem className='text-lg font-normal mt-2 text-white/90'>
+              Executive Business Partner
             </CardItem>
             <CardItem className="text-xs md:text-sm text-gray-300 mt-2 md:mt-4 text-center">
               Pengalaman 11 Tahun berkarir di industri perbankkan dan 4 tahun di industri asuransi.
@@ -96,12 +102,14 @@ export function TeamCard() {
               alt="thumbnail"
             />
           </CardItem>
-          <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>EBP</div>
           <div className="bg-blue-950 p-4 md:p-6 flex flex-col items-center justify-between rounded-b-xl">
             <CardItem
               className="text-lg md:text-xl lg:text-2xl text-white font-sans font-bold"
             >
               Hendrik
+            </CardItem>
+            <CardItem className='text-lg font-normal mt-2 text-white/90'>
+              Executive Business Partner
             </CardItem>
             <CardItem className="text-xs md:text-sm text-gray-300 mt-2 md:mt-4 text-center">
               Sejak 2010, saya mengabdi di industri perbankan dan memahami betul kebutuhan masyarakat.

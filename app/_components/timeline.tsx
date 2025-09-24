@@ -39,7 +39,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="mx-auto">
         <h2 className="text-3xl md:text-5xl text-white font-bold">
-          Mari Kenal Lebih Dekat Bersama Trunity
+          Mari Kenal Lebih Dekat Bersama Trunity Agency
         </h2>
       </div>
 

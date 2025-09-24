@@ -9,7 +9,7 @@ import Visi2 from "@/public/assets/visi-2.jpg"
 export function About() {
   const data = [
     {
-      title: "Tentang Trunity",
+      title: "Tentang Trunity Agency",
       content: (
         <div>
           <p className="mb-8 text-sm lg:text-base font-normal text-gray-300">
@@ -35,7 +35,7 @@ export function About() {
       ),
     },
     {
-      title: "Visi Trunity",
+      title: "Visi Trunity Agency",
       content: (
         <div>
           <p className="mb-8 text-sm lg:text-base font-normal text-gray-300">
@@ -61,7 +61,7 @@ export function About() {
       ),
     },
     {
-      title: "Misi Trunity",
+      title: "Misi Trunity Agency",
       content: (
         <div>
           <div className="mb-8 flex flex-col gap-4">

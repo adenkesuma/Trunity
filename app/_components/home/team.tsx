@@ -47,12 +47,14 @@ const Team = () => {
                   alt="thumbnail"
                 />
               </CardItem>
-              <div className='border border-blue-950/10 py-1 px-3 rounded-lg bg-blue-300/30 text-blue-600 font-bold absolute top-2 right-2 text-sm font-sans'>Founder</div>
               <div className="bg-blue-950 rounded-b-xl p-6 flex flex-col items-center justify-between">
                 <CardItem
-                  className="text-2xl text-white font-bold font-sans"
+                  className="text-3xl text-white font-bold font-sans"
                 >
                   Angelia Chen
+                </CardItem>
+                <CardItem className='text-lg font-normal mt-2 text-white/90'>
+                  Founder Trunity Agency
                 </CardItem>
                 <CardItem className="text-sm text-gray-300 mt-4 text-center">
                   10 tahun di industri perbankan dan 8 tahun di industri asuransi. <span className='font-bold'>7x MDRT and 1x COT</span>

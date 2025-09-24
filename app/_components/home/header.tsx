@@ -32,25 +32,58 @@ const Header = () => {
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="lightblue"
       /> */}
-      <Image src={Logo} alt="logo" className='opacity-[6%] w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
+      {/* <Image src={Logo} alt="logo" className='opacity-[6%] w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/> */}
       <div className="relative z-10 mx-auto w-full container p-4 pt-20 md:pt-0">
-        <div className="flex flex-col items-center gap-6">
-          <h1 className='text-blue-950 text-4xl md:text-6xl max-w-5xl font-bold text-center font-sans mb-4'>One Stop Solution for Insurance & Financial Growth</h1>
-          <div className="flex items-center gap-6">
-            <div className="flex items-center gap-2">
+        <div className="flex flex-col items-start gap-6">
+          <h1 className='text-blue-950 text-4xl md:text-6xl max-w-5xl font-bold text-left font-sans mb-2'>One Stop Solution for Insurance & Financial Growth</h1>
+          <div className="flex flex-col md:flex-row items-start gap-6">
+            <div className="flex flex-col gap-1">
+              <div className='font-bold text-gray-900'>Perlindungan Aset</div>
+              <div className="flex items-center gap-2">
                 <CircleCheckBig className='text-blue-600' size={'18px'} />
-                <span className='text-gray-700 text-xs md:text-sm font-semibold'>Amankan Nilai Aset</span>
+                <span className='text-gray-700 text-xs md:text-sm font-medium'>Perlindungan Hutang (Modal Kerja)</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CircleCheckBig className='text-blue-600' size={'18px'} />
+                <span className='text-gray-700 text-xs md:text-sm font-medium'>KPR (Kredit Kepemilikan Rumah)</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CircleCheckBig className='text-blue-600' size={'18px'} />
+                <span className='text-gray-700 text-xs md:text-sm font-medium'>Leasing</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-col gap-1">
+              <div className="font-bold text-gray-900">Wirausaha</div>
+              <div className="flex items-center gap-2">
                 <CircleCheckBig className='text-blue-600' size={'18px'} />
-                <span className='text-gray-700 text-xs md:text-sm font-semibold'>Genjot Pertumbuhan</span>
+                <span className='text-gray-700 text-xs md:text-sm font-medium'>Memberikan percepatan income untuk orang-orang</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CircleCheckBig className='text-blue-600' size={'18px'} />
+                <span className='text-gray-700 text-xs md:text-sm font-medium'>Peluang passive income dari jaringan agen</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CircleCheckBig className='text-blue-600' size={'18px'} />
+                <span className='text-gray-700 text-xs md:text-sm font-medium'>Business yang scalable</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-col gap-1">
+              <div className="font-bold text-gray-900">Perencanaan Warisan</div>
+              <div className="flex items-center gap-2">
                 <CircleCheckBig className='text-blue-600' size={'18px'} />
-                <span className='text-gray-700 text-xs md:text-sm font-semibold'>Wariskan Kekayaan</span>
+                <span className='text-gray-700 text-xs md:text-sm font-medium'>Perencanaan waris yang terstruktur</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CircleCheckBig className='text-blue-600' size={'18px'} />
+                <span className='text-gray-700 text-xs md:text-sm font-medium'>Perlindungan aset untuk generasi penerus</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CircleCheckBig className='text-blue-600' size={'18px'} />
+                <span className='text-gray-700 text-xs md:text-sm font-medium'>Pengelolaan kekayaan jangka panjang</span>
+              </div>
             </div>
           </div>
-          <p className='px-4 text-sm font-normal text-gray-600 text-center'>Dipimpin oleh Financial Advisor Berprestasi 7x MDRT Award-Winner dan 1X COT. <br className='hidden md:block' /> 18+ Tahun mendedikasikan expertise untuk merancang strategi finansial yang tak hanya melindungi, tapi juga mewariskan kekayaan.</p>
+          <p className='mt-4 text-sm font-normal text-gray-600 text-left'>Dipimpin oleh Financial Advisor Berprestasi 7x MDRT Award-Winner dan 1X COT. <br className='hidden md:block' /> 18+ Tahun mendedikasikan expertise untuk merancang strategi finansial yang tak hanya melindungi, tapi juga mewariskan kekayaan.</p>
           {/* <a href="#" target='_blank' className='py-2 px-3 rounded-xl bg-blue-600 text-white text-sm w-fit font-semibold'>
             Ngobrol Bareng Founder
           </a> */}
@@ -75,6 +108,7 @@ const Header = () => {
             </div>
           </div> */}
         </div>
+        
       </div>
     </div>
   )
