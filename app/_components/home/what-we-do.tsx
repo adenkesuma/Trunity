@@ -184,8 +184,8 @@ import MasterDay from "@/public/assets/Frame 7.png"
 import FastTrack from "@/public/assets/Frame 6.png"
 import GatheringBOS from "@/public/assets/Frame 8.png"
 import UnityDay from "@/public/assets/Frame 9.png"
-import PotentialDay from "@/public/assets/Frame 10.png"
-import Mentoring from "@/public/assets/Frame 11.png"
+import PotentialDay from "@/public/assets/potential.jpeg"
+import Mentoring from "@/public/assets/mentoring.jpeg"
 import { ArrowUpRight, X } from "lucide-react";
 
 // Interface untuk data video
@@ -263,7 +263,7 @@ export function WhatWeDo() {
     },
     potentialDay: {
       title: "Potential Day",
-      path: "/assets/potential-day.mp4",
+      path: "/assets/potentialday.mp4",
       color: "text-white"
     },
     unityDay: {
@@ -364,7 +364,7 @@ export function WhatWeDo() {
           <div className="p-6">
             <div className="inline-block py-1 px-3 rounded-full bg-purple-100 text-purple-800 text-xs font-semibold mb-3">SETIAP RABU</div>
             <h3 className="text-xl mb-3 font-bold text-gray-900">Potential Day</h3>
-            <p className="text-sm text-gray-700 mb-4">Deep dive session untuk menguasai produk AXA secara mendalam. Jadilah expert yang percaya diri dalam memberikan solusi terbaik untuk klien.</p>
+            <p className="text-sm text-gray-700 mb-4">Deep dive session untuk menguasai produk dan sales idea secara mendalam. Jadilah expert yang percaya diri dalam memberikan solusi terbaik untuk klien.</p>
             <div className="mt-2">
               <span className="text-sm font-semibold text-gray-900 mb-2 block">Konten Utama:</span>
               <div className="flex flex-wrap gap-2 mt-1">
@@ -377,13 +377,15 @@ export function WhatWeDo() {
           </div>
           <div className="relative">
             <Image src={PotentialDay} alt="Potential Day Workshop" className="h-72 object-cover rounded-2xl"/>
-            {/* <button 
+            {/*
+            <button 
               onClick={() => handleOpenVideo('potentialDay')}
               className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-purple-800 font-semibold cursor-pointer hover:bg-purple-50 transition-colors shadow-md"
             >
               <span>Lihat Video</span>
               <ArrowUpRight size={16} />
-            </button> */}
+            </button> 
+            */}
           </div>
         </div>
 
@@ -435,7 +437,20 @@ export function WhatWeDo() {
             </div>
           </div>
           <div className="relative">
-            <Image src={GatheringBOS} alt="BOS & Gathering Events" className="h-72 object-cover rounded-2xl"/>
+            {/* <Image src={GatheringBOS} alt="BOS & Gathering Events" className="h-72 object-cover rounded-2xl"/> */}
+            <video
+              src={"/assets/gathering.mp4"}
+              controls
+              muted
+              autoPlay
+              className="w-full h-72 rounded-lg"
+              style={{ 
+                objectFit: 'cover', // Pastikan video tidak tercrop
+                backgroundColor: 'black' // Background untuk video dengan aspect ratio berbeda
+              }}
+            >
+              Browser Anda tidak mendukung pemutaran video.
+            </video>
             <button 
               onClick={() => handleOpenVideo('gatheringBOS')}
               className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-red-800 font-semibold cursor-pointer hover:bg-red-50 transition-colors shadow-md"
@@ -466,13 +481,13 @@ export function WhatWeDo() {
           </div>
           <div className="relative">
             <Image src={Mentoring} alt="90 Days Mentoring Program" className="h-72 object-cover rounded-2xl"/>
-            {/* <button 
+            <button 
               onClick={() => handleOpenVideo('mentoring')}
               className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-teal-800 font-semibold cursor-pointer hover:bg-teal-50 transition-colors shadow-md"
             >
               <span>Lihat Video</span>
               <ArrowUpRight size={16} />
-            </button> */}
+            </button>
           </div>
         </div>
       </div>

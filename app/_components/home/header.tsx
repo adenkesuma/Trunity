@@ -135,11 +135,11 @@ const Header = () => {
             <div className="font-bold text-gray-900 text-xs">Wirausaha</div>
             <div className="flex items-center gap-2 text-xs">
               <CircleCheckBig className='text-blue-600 shrink-0' size={'14px'} />
-              <span className='text-gray-700 text-[10px] xl:text-xs font-medium'>Memberikan percepatan income untuk orang-orang</span>
+              <span className='text-gray-700 text-[10px] xl:text-xs font-medium'>Memberikan percepatan income</span>
             </div>
             <div className="flex items-center gap-2">
               <CircleCheckBig className='text-blue-600 shrink-0' size={'14px'} />
-              <span className='text-gray-700 text-[10px] xl:text-xs font-medium'>Peluang passive income dari jaringan agen</span>
+              <span className='text-gray-700 text-[10px] xl:text-xs font-medium'>Peluang passive income</span>
             </div>
             <div className="flex items-center gap-2">
               <CircleCheckBig className='text-blue-600 shrink-0' size={'14px'} />

@@ -31,7 +31,7 @@ export function About() {
           </div>
           <p className="w-full lg:w-1/2 text-lg lg:text-2xl font-normal text-gray-800">
             <Quote className="mb-3 rotate-180 text-gray-400" />
-            Kami adalah agency yang berkomitmen menumbuhkan kepemimpinan, kolaborasi dan solidaritas serta memasterkan setiap potensial menciptakan pemimpin-pemimpin baru untuk meraih kesuksesan tanpa batas bersama 
+            Kami adalah agency yang berkomitmen menumbuhkan kepemimpinan, kolaborasi dan solidaritas serta memasterkan setiap potensial team yang bergabung dengan kami 
             <Quote className="mt-3 text-gray-400" />
           </p>
         </div>
