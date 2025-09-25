@@ -149,7 +149,7 @@ export const Card = ({
   return (
     <motion.div
       layoutId={layout ? `card-${card.title}` : undefined}
-      className="relative z-10 flex h-full w-56 flex-col items-start justify-between overflow-hidden rounded-3xl bg-white p-4 md:w-80"
+      className="relative z-10 flex h-full w-56 flex-col items-start justify-between overflow-hidden rounded-3xl bg-white shadow-sm md:w-80"
     >
       <div className="w-full mb-4">
         <div className="mb-4 flex items-center justify-center rounded-xl border border-gray-200 bg-gray-100">
@@ -161,19 +161,19 @@ export const Card = ({
         
         <motion.p
           layoutId={layout ? `category-${card.category}` : undefined}
-          className="text-left font-sans text-lg font-bold text-blue-950"
+          className="text-left font-sans text-lg font-bold text-blue-950 px-6"
         >
           {card.category}
         </motion.p>
         <motion.p
           layoutId={layout ? `title-${card.title}` : undefined}
-          className="mt-2 max-w-xs text-left font-sans text-xs md:text-sm font-normal [text-wrap:balance] text-gray-600"
+          className="mt-2 max-w-xs text-left font-sans text-xs md:text-sm px-6 font-normal [text-wrap:balance] text-gray-600"
         >
           {card.title}
         </motion.p>
       </div>
 
-      <div className="flex flex-col md:flex-row w-full gap-2">
+      <div className="flex flex-col md:flex-row w-full gap-2 px-6 pb-6">
         <a
           href={card.src}
           target="_blank"

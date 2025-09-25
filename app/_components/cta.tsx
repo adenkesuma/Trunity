@@ -14,15 +14,15 @@ const CTA = () => {
       <figure className='p-6 w-full lg:w-1/2'>
         <Image src={WhiteLogo} alt='white logo' />
       </figure>
-      <div className='w-full lg:w-1/2 flex flex-col gap-6 p-10 rounded-2xl border border-white/30 bg-white/20 backdrop-blur-md'>
-        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white font-sans">Ayo Konsultasi Gratis Ke Trunity Agency Sekarang Juga!</h2>
-        <p className='text-white'>Mari melangkah untuk hal yang lebih baik demi mengamankan masa depan anak dan keluarga kamu bersama Trunity Agency.</p>
+      <div className='w-full lg:w-1/2 flex flex-col gap-6 p-10 rounded-2xl bg-white'>
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-blue-950 font-sans">Ayo Konsultasi Gratis Ke Trunity Agency Sekarang Juga!</h2>
+        <p className='text-gray-600'>Mari melangkah untuk hal yang lebih baik demi mengamankan masa depan anak dan keluarga kamu bersama Trunity Agency.</p>
         <div className="flex items-center flex-wrap gap-4">
-          <a href='https://www.instagram.com/trunityagency/' className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold bg-white text-blue-600">
+          <a href='https://www.instagram.com/trunityagency/' className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold bg-gradient-to-br from-blue-500 to-blue-800 text-white">
             <span>Follow Instagram Trunity</span>
             <Instagram size={"18px"}/>
           </a>
-          <button onClick={handleEmailClick} className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold bg-white text-blue-600">
+          <button onClick={handleEmailClick} className="w-fit cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-br from-blue-500 to-blue-800">
             <span>Hubungi Trunity</span>
             <Mail size={"18px"} />
           </button> 
