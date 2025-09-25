@@ -112,6 +112,10 @@ const Header = () => {
         
         <div className='w-full lg:w-1/2 flex justify-center relative'>
           <Image src={Founder} alt='founder' className='w-96 -mb-6'/>
+          <div className="bg-blue-50 border border-blue-200 lg:border-none lg:bg-transparent p-2 lg:p-0 rounded-xl lg:rounded-none flex flex-col absolute h-fit top-45 lg:top-20 right-0 lg:right-6">
+            <h3 className='text-sm lg:text-2xl font-semibold'>Angelia Chen</h3>           
+            <span className='text-xs text-gray-600 lg:text-base'>Founder Trunity Agency</span>
+          </div>
           <div className="flex flex-col gap-1 bg-blue-50 border border-blue-200 p-4 rounded-xl absolute h-fit bottom-63 left-4 lg:left-10">
             <div className='font-bold text-gray-900 text-xs'>Perlindungan Aset</div>
             <div className="flex items-center gap-2">

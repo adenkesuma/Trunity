@@ -23,31 +23,36 @@ export function Testimonials() {
     </div>
   );
 }
- 
+
 const testimonials = [
   {
-    quote: "Waktu mobil saya tabrakan, saya sempat panik. Tapi proses klaimnya jauh lebih cepat dan mudah dari yang saya bayangkan. Dalam 3 hari semua sudah beres, dan saya bisa pakai mobil lagi. Terima kasih untuk agen yang sangat membantu.",
-    name: "Budi Santoso",
-    title: "Nasabah Asuransi Kendaraan",
+    quote: "Saya bergabung di industri asuransi dan berhasil mencapai banyak penghargaan. Perjalanan ini membuktikan bahwa dengan konsistensi dan sistem yang tepat, peluang sukses terbuka lebar.",
+    name: "Cindy Veronica",
+    title: "Agen Asuransi Berprestasi",
   },
   {
-    quote: "Awalnya ragu mau beli asuransi kesehatan, tapi ternyata sangat membantu saat anak saya dirawat di rumah sakit. Tidak perlu pusing urus administrasi atau biaya, fokus saja pada kesembuhan anak.",
-    name: "Siti Aisyah",
-    title: "Ibu Rumah Tangga",
+    quote: "Sebagai ibu rumah tangga, saya awalnya ragu apakah bisa sukses di bidang asuransi. Namun berkat bimbingan dan sistem yang tepat, saya berhasil mencapai banyak penghargaan dan membantu banyak keluarga terlindungi.",
+    name: "Veronica",
+    title: "Agen Asuransi Berprestasi",
   },
   {
-    quote: "Sebagai freelancer, saya tidak punya jaminan kesehatan dari perusahaan. Asuransi ini pilihan yang tepat untuk melindungi income saya. Klaim rawat jalan pun prosesnya mudah lewat aplikasi.",
-    name: "Ahmad Rizky",
-    title: "Desainer Grafis",
+    quote: "Awalnya saya hanya karyawan perbankan biasa, namun setelah mencoba di dunia asuransi, saya mampu meraih banyak penghargaan dan prestasi yang tidak saya bayangkan sebelumnya.",
+    name: "Sanny Wijaya",
+    title: "Agen Asuransi",
   },
   {
-    quote: "Kebakaran di rumah tetangga membuat saya sadar akan pentingnya asuransi properti. Alhamdulillah, saya sudah terlindungi. Proses survey kerusakan dan pencairan klaimnya transparan dan adil.",
-    name: "Dewi Lestari",
-    title: "Pemilik Toko",
+    quote: "Sebagai seorang karyawan perbankan, saya ingin punya sumber income tambahan. Ternyata asuransi membuka jalan saya untuk sukses, bukan hanya dari sisi finansial tapi juga pengalaman hidup.",
+    name: "Hendrik",
+    title: "Agen Asuransi",
   },
   {
-    quote: "Kecelakaan di jalan tol bikin rugi banyak kalau tidak ada asuransi. Penggantian kerugian untuk pihak ketiga dan perbaikan mobil sendiri berjalan lancar. Hanya perlu telepon satu kali, sisanya dihandle sampai selesai.",
-    name: "Joko Wijaya",
-    title: "Karyawan Swasta",
-  }
+    quote: "Saya seorang ibu rumah tangga yang langsung closing setelah ikut fast-track 2 hari. Program Trunity membuat saya siap terjun jadi agen asuransi profesional dalam waktu singkat.",
+    name: "Teacher Kusuma",
+    title: "Agen Asuransi",
+  },
+  {
+    quote: "Saya baru bergabung di dunia asuransi, dan langsung berhasil closing di bulan pertama. Kesempatan ini membuktikan bahwa siapa pun bisa sukses jika mengikuti sistem yang benar.",
+    name: "Christina",
+    title: "Agen Asuransi",
+  },
 ];

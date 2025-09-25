@@ -5,7 +5,7 @@ import { CardBody, CardContainer, CardItem } from "../three-d-card";
 import { TeamCard } from '../team-card'
 import Image from 'next/image';
 import Founder from "@/public/assets/angelia-2.png"
-import { Instagram, Mail } from 'lucide-react';
+import { ArrowUpRight, Instagram, Mail } from 'lucide-react';
 
 const Team = () => {
   const handleEmailClick = () => {
@@ -15,7 +15,7 @@ const Team = () => {
   return (
     <div id='team' className=''>
       <div className="container mx-auto py-10 px-4 sm:px-0">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
           <div className='flex flex-col gap-6'>
             <div className="flex flex-col gap-6">
               <h2 className="relative z-20 text-3xl md:text-5xl font-bold text-left text-blue-950 font-sans tracking-tight">
@@ -36,9 +36,9 @@ const Team = () => {
               </div> 
             </div>
           </div>
-          <CardContainer className="inter-var w-full md:w-96">
-            <CardBody className="bg-gray-50 relative group/card h-auto rounded-xl border">
-              <CardItem translateZ="100" className="w-full mt-4 flex justify-center">
+          <div className="inter-var w-full md:w-96">
+            <div className="bg-gray-50 relative group/card h-auto rounded-xl border">
+              <div className="w-full mt-4 flex justify-center">
                 <Image
                   src={Founder}
                   height="1000"
@@ -46,22 +46,26 @@ const Team = () => {
                   className="h-72 xl:h-96 w-44 xl:w-60 object-cover rounded-xl group-hover/card:shadow-none"
                   alt="thumbnail"
                 />
-              </CardItem>
+              </div>
               <div className="bg-blue-950 rounded-b-xl p-6 flex flex-col items-center justify-between">
-                <CardItem
+                <div
                   className="text-3xl text-white font-bold font-sans"
                 >
                   Angelia Chen
-                </CardItem>
-                <CardItem className='text-lg font-normal mt-2 text-white/90'>
+                </div>
+                <div className='text-lg font-normal mt-2 text-white/90'>
                   Founder Trunity Agency
-                </CardItem>
-                <CardItem className="text-sm text-gray-300 mt-4 text-center">
+                </div>
+                <div className="text-sm text-gray-300 mt-4 text-center">
                   10 tahun di industri perbankan dan 8 tahun di industri asuransi. <span className='font-bold'>7x MDRT and 1x COT</span>
-                </CardItem>
+                </div>
+                <a href="https://www.instagram.com/angeliach3n/" target='_blank' className="mt-4 w-full py-2 px-4 rounded-xl flex justify-center cursor-pointer items-center gap-2 bg-white text-blue-700">
+                  <Instagram size={"14px"} className='shrink-0' />
+                  <span className='shrink-0 text-sm'>Follow Instagram Founder</span>
+                </a>
               </div>
-            </CardBody>
-          </CardContainer>
+            </div>
+          </div>
         </div>
         <TeamCard />
       </div>

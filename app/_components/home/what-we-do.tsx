@@ -7,7 +7,7 @@ export function WhatWeDo() {
   return (
     <div id="activity" className="h-full py-14 md:py-20 w-full bg-gradient-to-bl from-blue-950 to-blue-600 mt-18">
       <h2 className="text-3xl md:text-5xl font-sans font-bold text-white text-center mb-4">Kegiatan Trunity Agency</h2>
-      <p className="text-center text-blue-100 max-w-2xl mx-auto px-4 mb-10">Program-program berkualitas untuk membangun tim agen asuransi AXA yang profesional dan sukses</p>
+      <p className="text-center text-blue-100 max-w-5xl mx-auto px-4 mb-10">Program-program berkualitas untuk membangun tim agen asuransi yang profesional dan sukses</p>
       
       <div className="container mx-auto my-10 px-4 sm:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Trunity Fast-Track */}
