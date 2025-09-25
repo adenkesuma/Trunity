@@ -258,7 +258,7 @@ export function WhatWeDo() {
     },
     masterDay: {
       title: "Master Day",
-      path: "/assets/master-day.mp4",
+      path: "/assets/video-3.mp4",
       color: "text-white"
     },
     potentialDay: {
@@ -268,12 +268,12 @@ export function WhatWeDo() {
     },
     unityDay: {
       title: "Unity Day",
-      path: "/assets/unity-day.mp4",
+      path: "/assets/video-2.mp4",
       color: "text-white"
     },
     gatheringBOS: {
       title: "BOS & Gathering",
-      path: "/assets/gathering-bos.mp4",
+      path: "/assets/video-1.mp4",
       color: "text-white"
     },
     mentoring: {
@@ -319,7 +319,7 @@ export function WhatWeDo() {
             </div>
           </div>
           <div className="relative">
-            <Image src={FastTrack} alt="Trunity Fast-Track Training" className="h-72 object-cover rounded-b-2xl"/>
+            <Image src={FastTrack} alt="Trunity Fast-Track Training" className="h-72 object-cover rounded-2xl"/>
             <button 
               onClick={() => handleOpenVideo('fastTrack')}
               className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-blue-800 font-semibold cursor-pointer hover:bg-blue-50 transition-colors shadow-md"
@@ -348,7 +348,7 @@ export function WhatWeDo() {
             </div>
           </div>
           <div className="relative">
-            <Image src={MasterDay} alt="Master Day Session" className="h-72 object-cover rounded-b-2xl"/>
+            <Image src={MasterDay} alt="Master Day Session" className="h-72 object-cover rounded-2xl"/>
             <button 
               onClick={() => handleOpenVideo('masterDay')}
               className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-green-800 font-semibold cursor-pointer hover:bg-green-50 transition-colors shadow-md"
@@ -376,14 +376,14 @@ export function WhatWeDo() {
             </div>
           </div>
           <div className="relative">
-            <Image src={PotentialDay} alt="Potential Day Workshop" className="h-72 object-cover rounded-b-2xl"/>
-            <button 
+            <Image src={PotentialDay} alt="Potential Day Workshop" className="h-72 object-cover rounded-2xl"/>
+            {/* <button 
               onClick={() => handleOpenVideo('potentialDay')}
               className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-purple-800 font-semibold cursor-pointer hover:bg-purple-50 transition-colors shadow-md"
             >
               <span>Lihat Video</span>
               <ArrowUpRight size={16} />
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -405,7 +405,7 @@ export function WhatWeDo() {
             </div>
           </div>
           <div className="relative">
-            <Image src={UnityDay} alt="Unity Day Activities" className="h-72 object-cover rounded-b-2xl"/>
+            <Image src={UnityDay} alt="Unity Day Activities" className="h-72 object-cover rounded-2xl"/>
             <button 
               onClick={() => handleOpenVideo('unityDay')}
               className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-orange-800 font-semibold cursor-pointer hover:bg-orange-50 transition-colors shadow-md"
@@ -435,7 +435,7 @@ export function WhatWeDo() {
             </div>
           </div>
           <div className="relative">
-            <Image src={GatheringBOS} alt="BOS & Gathering Events" className="h-72 object-cover rounded-b-2xl"/>
+            <Image src={GatheringBOS} alt="BOS & Gathering Events" className="h-72 object-cover rounded-2xl"/>
             <button 
               onClick={() => handleOpenVideo('gatheringBOS')}
               className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-red-800 font-semibold cursor-pointer hover:bg-red-50 transition-colors shadow-md"
@@ -465,7 +465,7 @@ export function WhatWeDo() {
             </div>
           </div>
           <div className="relative">
-            <Image src={Mentoring} alt="90 Days Mentoring Program" className="h-72 object-cover rounded-b-2xl"/>
+            <Image src={Mentoring} alt="90 Days Mentoring Program" className="h-72 object-cover rounded-2xl"/>
             {/* <button 
               onClick={() => handleOpenVideo('mentoring')}
               className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-teal-800 font-semibold cursor-pointer hover:bg-teal-50 transition-colors shadow-md"
