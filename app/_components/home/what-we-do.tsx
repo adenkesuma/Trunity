@@ -247,14 +247,14 @@ export function WhatWeDo() {
         {/* BOS */}
         <div className="flex flex-col justify-between rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300">
           <div className="p-6">
-            <div className="inline-block py-1 px-3 rounded-full bg-red-100 text-red-800 text-xs font-semibold mb-3">SPECIAL EVENT</div>
+            <div className="inline-block py-1 px-3 rounded-full bg-yellow-100 text-yellow-800 text-xs font-semibold mb-3">SPECIAL EVENT</div>
             <h3 className="text-xl mb-3 font-bold text-gray-900">BOS</h3>
             <p className="text-sm text-gray-700 mb-3">Program pengembangan leadership dan advanced skills untuk agen dan leader berpengalaman.</p>
             <div className="mt-2">
               <span className="text-sm font-semibold text-gray-900 mb-2 block">Highlight Acara:</span>
               <div className="flex flex-wrap gap-2 mt-1">
-                <span className="py-1 px-3 text-xs font-medium rounded-full bg-red-100 text-red-800 border border-red-200">Advanced Training</span>
-                <span className="py-1 px-3 text-xs font-medium rounded-full bg-red-100 text-red-800 border border-red-200">Leadership Development</span>
+                <span className="py-1 px-3 text-xs font-medium rounded-full bg-yellow-100 text-yellow-800 border border-yellow-200">Advanced Training</span>
+                <span className="py-1 px-3 text-xs font-medium rounded-full bg-yellow-100 text-yellow-800 border border-yellow-200">Leadership Development</span>
                 
               </div>
             </div>
@@ -277,7 +277,7 @@ export function WhatWeDo() {
             </video> */}
             <button 
               onClick={() => handleOpenVideo('bos')}
-              className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-red-800 font-semibold cursor-pointer hover:bg-red-50 transition-colors shadow-md"
+              className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-yellow-800 font-semibold cursor-pointer hover:bg-red-50 transition-colors shadow-md"
             >
               <span>Lihat Video</span>
               <ArrowUpRight size={16} />
