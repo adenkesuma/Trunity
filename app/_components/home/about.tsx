@@ -1,10 +1,8 @@
 import React from "react";
 import { Timeline } from "./../timeline";
 import Image from "next/image";
-import About1 from '@/public/assets/about.jpg';
-import About3 from "@/public/assets/about-3.png";
-import Visi1 from "@/public/assets/visi.jpg"
-import Visi3 from "@/public/assets/visi-3.png"
+import AboutAsset from "@/public/assets/about-2.jpg";
+import Visi from "@/public/assets/vision.jpg"
 import { Quote } from "lucide-react";
 
 export function About() {
@@ -22,7 +20,7 @@ export function About() {
               className="border-8 rounded-xl border-white/30 h-40 w-full object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-72 lg:h-96"
             /> */}
             <Image
-              src={About3}
+              src={AboutAsset}
               alt="startup template"
               width={500}
               height={500}
@@ -43,7 +41,7 @@ export function About() {
         <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10 bg-white p-6 rounded-3xl">
           <div className="w-full lg:w-1/2">
             <Image
-              src={Visi3}
+              src={Visi}
               alt="startup template"
               width={500}
               height={500}
