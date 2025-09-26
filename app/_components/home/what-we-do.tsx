@@ -94,7 +94,7 @@ export function WhatWeDo() {
     },
     bos: {
       title: "BOS",
-      path: "/assets/video-1.mp4",
+      path: "/assets/bos.mp4",
       color: "text-white"
     },
     gathering: {
@@ -276,7 +276,7 @@ export function WhatWeDo() {
               Browser Anda tidak mendukung pemutaran video.
             </video> */}
             <button 
-              onClick={() => handleOpenVideo('gatheringBOS')}
+              onClick={() => handleOpenVideo('bos')}
               className="flex items-center gap-2 py-2 px-4 rounded-xl absolute bottom-6 left-6 bg-white text-red-800 font-semibold cursor-pointer hover:bg-red-50 transition-colors shadow-md"
             >
               <span>Lihat Video</span>
